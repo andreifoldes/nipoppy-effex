@@ -1,0 +1,11 @@
+[2024-08-07 10:53:55] INFO    Writing the log to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/logs/run/fmriprep-20.2.7/fmriprep-20.2.7-20240807_1053.log
+[2024-08-07 10:53:55] INFO    ========== BEGIN RUN WORKFLOW ==========
+[2024-08-07 10:53:55] INFO    PipelineRunner(dpath_root=/cubric/collab/487_mvpa/poppy-effex/dataset, pipeline_name=fmriprep, pipeline_version=20.2.7, pipeline_step=None, participant_id=None, session_id=None, simulate=False, fpath_layout=None, logger=<Logger run (INFO)>, dry_run=False)
+[2024-08-07 10:53:56] WARNING Creating directory /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7
+[2024-08-07 10:53:56] INFO    Running on participant 126BPCP021001, session 1
+[2024-08-07 10:53:56] INFO    Building BIDSLayout with 2 ignore patterns: [re.compile('^(?!/sub-(126BPCP021001))'), re.compile('.*?/ses-(?!1)')]
+[2024-08-07 10:53:56] INFO    Loading descriptor from /cubric/collab/487_mvpa/poppy-effex/dataset/proc/descriptors/fmriprep-None.json
+[2024-08-07 10:53:56] ERROR   Error running fmriprep 20.2.7 on participant 126BPCP021001, session 1: [Errno 2] No such file or directory: '/cubric/collab/487_mvpa/poppy-effex/dataset/proc/descriptors/fmriprep-None.json'
+[2024-08-07 10:53:56] INFO    Removing /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7
+[2024-08-07 10:53:56] INFO    Removing /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7
+[2024-08-07 10:53:56] INFO    ========== END RUN WORKFLOW ==========
