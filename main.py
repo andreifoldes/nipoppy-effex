@@ -66,7 +66,7 @@ df = pd.DataFrame(data)
 # export the dataframe to a csv file
 df.to_csv("dataset/manifest.csv", index=False)
 
-# %% build preprocessing pipeline command
+#%% Step 4: build preprocessing pipeline command
 
 # Define the command
 command = ["nipoppy", "run", "--dataset-root", dataset_root_path, "--pipeline", "fmriprep"]
