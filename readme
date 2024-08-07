@@ -1,0 +1,11 @@
+
+error during fmriprep workflow:
+- FileNotFoundError: [Errno 2] No such file or directory: '/cubric/collab/487_mvpa/poppy-effex/bids_sample/scratch/logs/fmriprep.log'
+solution:
+- create the directory manually
+
+error during fmriprep workflow:
+FATAL:   could not open image /home/saptaf1/scratch/images/fmriprep_20.2.7.sif: failed to retrieve path for /home/saptaf1/scratch/images/fmriprep_20.2.7.sif: lstat /cubric/scratch/saptaf1/images/fmriprep_20.2.7.sif: no such file or directory
+2024-08-06 21:10:17,552 - nipoppy.workflow.logger - INFO - Successfully completed fmriprep run for participant: 126BPCP021001
+2024-08-06 21:10:17,553 - nipoppy.workflow.logger - INFO - ---------------------------------------------------------------------------
+2024-08-06 21:10:17,553 - nipoppy.workflow.logger - INFO -
