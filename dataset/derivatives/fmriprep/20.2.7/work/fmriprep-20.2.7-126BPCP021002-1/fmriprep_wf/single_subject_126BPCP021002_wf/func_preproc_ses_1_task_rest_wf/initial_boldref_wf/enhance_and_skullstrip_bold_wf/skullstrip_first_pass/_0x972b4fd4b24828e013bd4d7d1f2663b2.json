@@ -1,0 +1,28 @@
+[
+    [
+        "frac",
+        "0.2000000000"
+    ],
+    [
+        "in_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/func_preproc_ses_1_task_rest_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_bold_corrected.nii.gz",
+            "96c564e497c5b86c11a612d67c12c38d"
+        ]
+    ],
+    [
+        "mask",
+        true
+    ],
+    [
+        "output_type",
+        "NIFTI_GZ"
+    ],
+    [
+        "needed_outputs",
+        [
+            "mask_file",
+            "out_file"
+        ]
+    ]
+]

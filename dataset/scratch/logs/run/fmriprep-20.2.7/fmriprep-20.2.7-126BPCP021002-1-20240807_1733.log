@@ -1,0 +1,6 @@
+[2024-08-07 17:33:41] INFO    Writing the log to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/logs/run/fmriprep-20.2.7/fmriprep-20.2.7-126BPCP021002-1-20240807_1733.log
+[2024-08-07 17:33:41] INFO    ========== BEGIN RUN WORKFLOW ==========
+[2024-08-07 17:33:41] INFO    PipelineRunner(dpath_root=/cubric/collab/487_mvpa/poppy-effex/dataset, pipeline_name=fmriprep, pipeline_version=20.2.7, pipeline_step=None, participant_id=126BPCP021002, session_id=1, simulate=False, fpath_layout=None, logger=<Logger run (INFO)>, dry_run=False)
+[2024-08-07 17:33:41] WARNING Creating directory /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1
+[2024-08-07 17:33:41] INFO    Removing /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1
+[2024-08-07 17:33:41] INFO    ========== END RUN WORKFLOW ==========

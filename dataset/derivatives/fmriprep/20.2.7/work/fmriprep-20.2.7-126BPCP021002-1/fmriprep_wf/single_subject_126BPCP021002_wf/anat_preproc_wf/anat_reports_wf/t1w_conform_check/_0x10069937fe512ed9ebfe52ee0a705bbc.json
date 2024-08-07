@@ -1,0 +1,19 @@
+[
+    [
+        "function_str",
+        "def _empty_report(in_file=None):\n    from pathlib import Path\n    from nipype.interfaces.base import isdefined\n    if in_file is not None and isdefined(in_file):\n        return in_file\n\n    out_file = Path('tmp-report.html').absolute()\n    out_file.write_text(\"\"\"\\\n                <h4 class=\"elem-title\">A previously computed T1w template was provided.</h4>\n\"\"\")\n    return str(out_file)\n"
+    ],
+    [
+        "in_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/anat_preproc_wf/anat_template_wf/t1w_ref_dimensions/report.html",
+            "496091fcf996a54b465b1775470441d8"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out"
+        ]
+    ]
+]

@@ -1,0 +1,22 @@
+[
+    [
+        "hdr_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/bids/sub-126BPCP021002/ses-1/anat/sub-126BPCP021002_ses-1_acq-mprage_T1w.nii.gz",
+            "00a79d15780ef2294a0a2fdfd6be9fd6"
+        ]
+    ],
+    [
+        "wm_map",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/01_atropos/POSTERIOR_03.nii.gz",
+            "efe530089608f50373813716109d8892"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "wm_map"
+        ]
+    ]
+]

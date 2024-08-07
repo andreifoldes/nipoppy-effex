@@ -1,0 +1,15 @@
+[
+    [
+        "in_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/bids/sub-126BPCP021002/ses-1/anat/sub-126BPCP021002_ses-1_acq-mprage_T1w.nii.gz",
+            "00a79d15780ef2294a0a2fdfd6be9fd6"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

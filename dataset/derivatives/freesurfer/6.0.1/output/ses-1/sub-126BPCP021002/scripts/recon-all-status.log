@@ -1,0 +1,20 @@
+status file for recon-all
+Wed Aug  7 17:44:39 BST 2024
+#@# MotionCor Wed Aug  7 17:44:43 BST 2024
+#@# Talairach Wed Aug  7 17:44:54 BST 2024
+#@# Talairach Failure Detection Wed Aug  7 17:47:17 BST 2024
+#@# Nu Intensity Correction Wed Aug  7 17:47:17 BST 2024
+#@# Intensity Normalization Wed Aug  7 17:49:53 BST 2024
+recon-all -s sub-126BPCP021002 finished without error at Wed Aug  7 17:52:37 BST 2024
+
+
+
+New invocation of recon-all 
+
+
+
+status file for recon-all
+Wed Aug  7 18:14:47 BST 2024
+#@# EM Registration Wed Aug  7 18:14:47 BST 2024
+#@# CA Normalize Wed Aug  7 18:20:04 BST 2024
+#@# CA Reg Wed Aug  7 18:21:54 BST 2024

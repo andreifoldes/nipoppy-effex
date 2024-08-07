@@ -1,0 +1,21 @@
+[
+    [
+        "columns",
+        [
+            "dvars"
+        ]
+    ],
+    [
+        "in_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/func_preproc_ses_1_task_rest_wf/bold_confounds_wf/dvars/vol0000_xform-00000_merged_dvars_nstd.tsv",
+            "8b786b2f29fd8c4abd74a30466d5165c"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

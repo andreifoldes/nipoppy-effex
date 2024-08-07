@@ -1,0 +1,24 @@
+[
+    [
+        "in_tuple",
+        [
+            "MNI152NLin2009cAsym",
+            [
+                [
+                    "res",
+                    "native"
+                ]
+            ]
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "cohort",
+            "density",
+            "resolution",
+            "space",
+            "uid"
+        ]
+    ]
+]

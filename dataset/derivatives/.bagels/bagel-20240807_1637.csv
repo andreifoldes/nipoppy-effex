@@ -1,0 +1,2 @@
+participant_id,bids_participant,session_id,pipeline_name,pipeline_version,session,pipeline_complete,pipeline_starttime
+126BPCP021001,sub-126BPCP021001,1,fmriprep,20.2.7,ses-1,FAIL,UNAVAILABLE

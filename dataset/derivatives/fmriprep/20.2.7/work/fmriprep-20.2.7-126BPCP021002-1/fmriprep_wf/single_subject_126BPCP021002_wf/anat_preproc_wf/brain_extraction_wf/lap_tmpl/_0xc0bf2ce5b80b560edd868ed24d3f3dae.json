@@ -1,0 +1,31 @@
+[
+    [
+        "copy_header",
+        true
+    ],
+    [
+        "dimension",
+        3
+    ],
+    [
+        "op1",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/templateflow/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_T1w.nii.gz",
+            "1e51f1b44a8179abb30f5a7c3899c9af"
+        ]
+    ],
+    [
+        "op2",
+        "1.5 1"
+    ],
+    [
+        "operation",
+        "Laplacian"
+    ],
+    [
+        "needed_outputs",
+        [
+            "output_image"
+        ]
+    ]
+]

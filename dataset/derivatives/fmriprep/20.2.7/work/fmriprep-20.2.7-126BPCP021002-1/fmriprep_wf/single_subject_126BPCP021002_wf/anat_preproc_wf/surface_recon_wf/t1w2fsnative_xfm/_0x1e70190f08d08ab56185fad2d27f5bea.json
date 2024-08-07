@@ -1,0 +1,23 @@
+[
+    [
+        "in_lta",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/anat_preproc_wf/surface_recon_wf/fsnative2t1w_xfm/T1_robustreg.lta",
+            "c6419704493b82f22bf94ec9a8b354b1"
+        ]
+    ],
+    [
+        "invert",
+        true
+    ],
+    [
+        "out_lta",
+        true
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_lta"
+        ]
+    ]
+]

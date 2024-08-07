@@ -1,0 +1,24 @@
+[
+    [
+        "function_str",
+        "def _select_template(template):\n    from niworkflows.utils.misc import get_template_specs\n    template, specs = template\n    template = template.split(':')[0]  # Drop any cohort modifier if present\n    specs = specs.copy()\n    specs['suffix'] = specs.get('suffix', 'T1w')\n\n    # Sanitize resolution\n    res = specs.pop('res', None) or specs.pop('resolution', None) or 'native'\n    if res != 'native':\n        specs['resolution'] = res\n        return get_template_specs(template, template_spec=specs)[0]\n\n    # Map nonstandard resolutions to existing resolutions\n    specs['resolution'] = 2\n    try:\n        out = get_template_specs(template, template_spec=specs)\n    except RuntimeError:\n        specs['resolution'] = 1\n        out = get_template_specs(template, template_spec=specs)\n\n    return out[0]\n"
+    ],
+    [
+        "template",
+        [
+            "MNI152NLin2009cAsym",
+            [
+                [
+                    "res",
+                    "native"
+                ]
+            ]
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out"
+        ]
+    ]
+]

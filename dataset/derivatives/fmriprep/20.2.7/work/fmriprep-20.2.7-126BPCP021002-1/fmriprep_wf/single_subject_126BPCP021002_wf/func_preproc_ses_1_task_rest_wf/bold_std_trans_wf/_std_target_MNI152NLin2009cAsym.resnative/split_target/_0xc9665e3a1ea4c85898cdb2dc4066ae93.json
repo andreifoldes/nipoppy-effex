@@ -1,0 +1,25 @@
+[
+    [
+        "function_str",
+        "def _split_spec(in_target):\n    space, spec = in_target\n    template = space.split(':')[0]\n    return space, template, spec\n"
+    ],
+    [
+        "in_target",
+        [
+            "MNI152NLin2009cAsym",
+            [
+                [
+                    "res",
+                    "native"
+                ]
+            ]
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "space",
+            "spec"
+        ]
+    ]
+]

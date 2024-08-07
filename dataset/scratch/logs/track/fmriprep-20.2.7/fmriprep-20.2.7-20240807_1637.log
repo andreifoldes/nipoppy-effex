@@ -1,0 +1,9 @@
+[2024-08-07 16:37:25] INFO    Writing the log to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/logs/track/fmriprep-20.2.7/fmriprep-20.2.7-20240807_1637.log
+[2024-08-07 16:37:25] INFO    Initialized empty bagel
+[2024-08-07 16:37:25] INFO    ========== BEGIN TRACK WORKFLOW ==========
+[2024-08-07 16:37:25] INFO    PipelineTracker(dpath_root=/cubric/collab/487_mvpa/poppy-effex/dataset, pipeline_name=fmriprep, pipeline_version=20.2.7, participant_id=None, session_id=None, fpath_layout=None, logger=<Logger track (INFO)>, dry_run=False)
+[2024-08-07 16:37:26] INFO    Running on participant 126BPCP021001, session 1
+[2024-08-07 16:37:26] INFO    Loading config from /cubric/collab/487_mvpa/poppy-effex/dataset/global_config.json
+[2024-08-07 16:37:26] INFO    New/updated bagel shape: (1, 8)
+[2024-08-07 16:37:26] INFO    Saved to /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/bagel.csv (-> /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/.bagels/bagel-20240807_1637.csv)
+[2024-08-07 16:37:26] INFO    ========== END TRACK WORKFLOW ==========

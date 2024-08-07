@@ -1,0 +1,34 @@
+[
+    [
+        "fixed_image",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz",
+            "4a329cde3da26e124908d20f4bdaf7a8"
+        ]
+    ],
+    [
+        "fov_mask",
+        null
+    ],
+    [
+        "keep_native",
+        true
+    ],
+    [
+        "moving_image",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/copy_xform/sub-126BPCP021001_ses-1_acq-mprage_T1w_corrected_xform.nii.gz",
+            "c3188a9f52878afd6b3e2fd1aa55014a"
+        ]
+    ],
+    [
+        "xform_code",
+        null
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

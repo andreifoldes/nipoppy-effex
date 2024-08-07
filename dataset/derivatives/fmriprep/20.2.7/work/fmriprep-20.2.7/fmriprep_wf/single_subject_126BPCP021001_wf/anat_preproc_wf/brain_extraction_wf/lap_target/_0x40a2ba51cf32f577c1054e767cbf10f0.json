@@ -1,0 +1,31 @@
+[
+    [
+        "copy_header",
+        true
+    ],
+    [
+        "dimension",
+        3
+    ],
+    [
+        "op1",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/inu_n4/mapflow/_inu_n40/sub-126BPCP021001_ses-1_acq-mprage_T1w_maths_corrected.nii.gz",
+            "98088a8eadc5f6378f0effb778447348"
+        ]
+    ],
+    [
+        "op2",
+        "1.5 1"
+    ],
+    [
+        "operation",
+        "Laplacian"
+    ],
+    [
+        "needed_outputs",
+        [
+            "output_image"
+        ]
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    [
+        "hires_enabled",
+        true
+    ],
+    [
+        "t1w_list",
+        [
+            [
+                "/cubric/collab/487_mvpa/poppy-effex/dataset/bids/sub-126BPCP021001/ses-1/anat/sub-126BPCP021001_ses-1_acq-mprage_T1w.nii.gz",
+                "0aacf7e54ecc7ff1eb2e2f945b1f9d36"
+            ]
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "flair",
+            "hires",
+            "mris_inflate",
+            "t2w",
+            "use_flair",
+            "use_t2w"
+        ]
+    ]
+]

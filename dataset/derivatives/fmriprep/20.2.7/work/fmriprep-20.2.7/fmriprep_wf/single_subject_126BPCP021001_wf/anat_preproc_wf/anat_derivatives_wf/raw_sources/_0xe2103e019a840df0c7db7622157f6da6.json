@@ -1,0 +1,23 @@
+[
+    [
+        "bids_root",
+        "/cubric/collab/487_mvpa/poppy-effex/dataset/bids"
+    ],
+    [
+        "function_str",
+        "def _bids_relative(in_files, bids_root):\n    from pathlib import Path\n    if not isinstance(in_files, (list, tuple)):\n        in_files = [in_files]\n    in_files = [str(Path(p).relative_to(bids_root)) for p in in_files]\n    return in_files\n"
+    ],
+    [
+        "in_files",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/bids/sub-126BPCP021001/ses-1/anat/sub-126BPCP021001_ses-1_acq-mprage_T1w.nii.gz",
+            "0aacf7e54ecc7ff1eb2e2f945b1f9d36"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out"
+        ]
+    ]
+]

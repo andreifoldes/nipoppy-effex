@@ -1,0 +1,1069 @@
+[2024-08-07 11:57:06] INFO    Writing the log to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/logs/run/fmriprep-20.2.7/fmriprep-20.2.7-20240807_1157.log
+[2024-08-07 11:57:06] INFO    ========== BEGIN RUN WORKFLOW ==========
+[2024-08-07 11:57:06] INFO    PipelineRunner(dpath_root=/cubric/collab/487_mvpa/poppy-effex/dataset, pipeline_name=fmriprep, pipeline_version=20.2.7, pipeline_step=None, participant_id=None, session_id=None, simulate=False, fpath_layout=None, logger=<Logger run (INFO)>, dry_run=False)
+[2024-08-07 11:57:06] WARNING Creating directory /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7
+[2024-08-07 11:57:06] INFO    Running on participant 126BPCP021001, session 1
+[2024-08-07 11:57:06] INFO    Loading config from /cubric/collab/487_mvpa/poppy-effex/dataset/global_config.json
+[2024-08-07 11:57:06] INFO    Building BIDSLayout with 2 ignore patterns: [re.compile('^(?!/sub-(126BPCP021001))'), re.compile('.*?/ses-(?!1)')]
+[2024-08-07 11:57:07] INFO    Loading descriptor from /cubric/collab/487_mvpa/poppy-effex/dataset/proc/descriptors/fmriprep-20.2.7.json
+[2024-08-07 11:57:07] INFO    Loaded Boutiques config from descriptor: CONTAINER_CONFIG=ContainerConfig(COMMAND='apptainer', ARGS=['--bind', '[[NIPOPPY_DPATH_DERIVATIVES]]/freesurfer/6.0.1/output/[[NIPOPPY_BIDS_SESSION]]'], ENV_VARS={}, INHERIT=True) CONTAINER_SUBCOMMAND='run'
+[2024-08-07 11:57:07] INFO    Updating container config with config from descriptor
+[2024-08-07 11:57:07] INFO    Using container config: COMMAND='singularity' ARGS=['--bind', '/home/saptaf1/freesurfer_license.txt', '--bind', '/cubric/collab/487_mvpa/poppy-effex/templateflow', '--cleanenv', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/bids', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7'] ENV_VARS={'TEMPLATEFLOW_HOME': '/cubric/collab/487_mvpa/poppy-effex/templateflow'} INHERIT=True
+[2024-08-07 11:57:07] INFO    Setting environment variable: APPTAINERENV_TEMPLATEFLOW_HOME=/cubric/collab/487_mvpa/poppy-effex/templateflow
+[2024-08-07 11:57:07] INFO    Setting environment variable: SINGULARITYENV_TEMPLATEFLOW_HOME=/cubric/collab/487_mvpa/poppy-effex/templateflow
+[2024-08-07 11:57:07] INFO    Processing the JSON descriptor
+[2024-08-07 11:57:07] INFO    Validating the JSON descriptor
+[2024-08-07 11:57:07] INFO    Processing the JSON invocation
+[2024-08-07 11:57:07] INFO    Loading invocation from /cubric/collab/487_mvpa/poppy-effex/dataset/proc/invocations/fmriprep-20.2.7.json
+[2024-08-07 11:57:07] INFO    Validating the JSON invocation
+[2024-08-07 11:57:07] INFO    [RUN] bosh exec launch --stream '{"name": "fmriprep", "description": "fmriprep", "tool-version": "20.2.7", "schema-version": "0.5", "command-line": "singularity run --bind /home/saptaf1/freesurfer_license.txt --bind /cubric/collab/487_mvpa/poppy-effex/templateflow --cleanenv --bind /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1 --bind /cubric/collab/487_mvpa/poppy-effex/dataset/bids --bind /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output --bind /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7 --bind /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7 /cubric/software/singularity.images/fmriprep_20.2.7.sif [BIDS_DIR] [OUTPUT_DIR] [ANALYSIS_LEVEL] [VERSION] [SKIP_BIDS_VALIDATION] [PARTICIPANT_LABEL] [TASK_ID] [ECHO_IDX] [BIDS_FILTERS] [ANAT_DERIVATIVES] [BIDS_DATABASE_DIR] [NPROCS] [OMP_NTHREADS] [MEMORY_GB] [LOW_MEM] [USE_PLUGIN] [ANAT_ONLY] [BOILERPLATE_ONLY] [MD_ONLY_BOILERPLATE] [AROMA_ERR_ON_WARN] [VERBOSE_COUNT] [IGNORE] [LONGITUDINAL] [OUTPUT_SPACES] [BOLD2T1W_INIT] [BOLD2T1W_DOF] [USE_BBR] [MEDIAL_SURFACE_NAN] [SLICE_TIME_REF] [DUMMY_SCANS] [_RANDOM_SEED] [USE_AROMA] [AROMA_MELODIC_DIM] [REGRESSORS_ALL_COMPS] [REGRESSORS_FD_TH] [REGRESSORS_DVARS_TH] [SKULL_STRIP_TEMPLATE] [SKULL_STRIP_FIXED_SEED] [SKULL_STRIP_T1W] [FMAP_BSPLINE] [FMAP_NO_DEMEAN] [USE_SYN_SDC] [FORCE_SYN] [FS_LICENSE_FILE] [FS_SUBJECTS_DIR] [HIRES] [CIFTI_OUTPUT] [RUN_RECONALL] [OUTPUT_LAYOUT] [WORK_DIR] [CLEAN_WORKDIR] [RESOURCE_MONITOR] [REPORTS_ONLY] [CONFIG_FILE] [WRITE_GRAPH] [STOP_ON_FIRST_CRASH] [NOTRACK] [DEBUG] [SLOPPY]", "inputs": [{"id": "bids_dir", "name": "bids_dir", "description": "the root folder of a BIDS valid dataset (sub-XXXXX folders should be found at the top level in this folder).", "optional": false, "type": "String", "value-key": "[BIDS_DIR]"}, {"id": "output_dir", "name": "output_dir", "description": "the output path for the outcomes of preprocessing and visual reports", "optional": false, "type": "String", "value-key": "[OUTPUT_DIR]"}, {"id": "analysis_level", "name": "analysis_level", "description": "processing stage to be run, only \"participant\" in the case of fMRIPrep (see BIDS-Apps specification).", "optional": false, "type": "String", "value-key": "[ANALYSIS_LEVEL]", "value-choices": ["participant"]}, {"id": "version", "name": "version", "description": "show program'"'"'s version number and exit", "optional": true, "type": "Flag", "value-key": "[VERSION]", "command-line-flag": "--version"}, {"id": "skip_bids_validation", "name": "skip_bids_validation", "description": "assume the input dataset is BIDS compliant and skip the validation", "optional": true, "type": "Flag", "value-key": "[SKIP_BIDS_VALIDATION]", "command-line-flag": "--skip_bids_validation"}, {"id": "participant_label", "name": "participant_label", "description": "a space delimited list of participant identifiers or a single identifier (the sub- prefix can be removed)", "optional": true, "type": "String", "value-key": "[PARTICIPANT_LABEL]", "list": true, "command-line-flag": "--participant-label"}, {"id": "task_id", "name": "task_id", "description": "select a specific task to be processed", "optional": true, "type": "String", "value-key": "[TASK_ID]", "command-line-flag": "-t"}, {"id": "echo_idx", "name": "echo_idx", "description": "select a specific echo to be processed in a multiecho series", "optional": true, "type": "Number", "value-key": "[ECHO_IDX]", "command-line-flag": "--echo-idx"}, {"id": "bids_filters", "name": "bids_filters", "description": "a JSON file describing custom BIDS input filters using PyBIDS. For further details, please check out https://fmriprep.readthedocs.io/en/20.2.7/faq.html#how-do-I-select-only-certain-files-to-be-input-to-fMRIPrep", "optional": true, "type": "String", "value-key": "[BIDS_FILTERS]", "command-line-flag": "--bids-filter-file"}, {"id": "anat_derivatives", "name": "anat_derivatives", "description": "Reuse the anatomical derivatives from another fMRIPrep run or calculated with an alternative processing tool (NOT RECOMMENDED).", "optional": true, "type": "String", "value-key": "[ANAT_DERIVATIVES]", "command-line-flag": "--anat-derivatives"}, {"id": "bids_database_dir", "name": "bids_database_dir", "description": "Path to a PyBIDS database folder, for faster indexing (especially useful for large datasets). Will be created if not present.", "optional": true, "type": "String", "value-key": "[BIDS_DATABASE_DIR]", "command-line-flag": "--bids-database-dir"}, {"id": "nprocs", "name": "nprocs", "description": "maximum number of threads across all processes", "optional": true, "type": "String", "value-key": "[NPROCS]", "command-line-flag": "--nprocs"}, {"id": "omp_nthreads", "name": "omp_nthreads", "description": "maximum number of threads per-process", "optional": true, "type": "String", "value-key": "[OMP_NTHREADS]", "command-line-flag": "--omp-nthreads"}, {"id": "memory_gb", "name": "memory_gb", "description": "upper bound memory limit for fMRIPrep processes", "optional": true, "type": "String", "value-key": "[MEMORY_GB]", "command-line-flag": "--mem"}, {"id": "low_mem", "name": "low_mem", "description": "attempt to reduce memory usage (will increase disk usage in working directory)", "optional": true, "type": "Flag", "value-key": "[LOW_MEM]", "command-line-flag": "--low-mem"}, {"id": "use_plugin", "name": "use_plugin", "description": "nipype plugin configuration file", "optional": true, "type": "String", "value-key": "[USE_PLUGIN]", "command-line-flag": "--use-plugin"}, {"id": "anat_only", "name": "anat_only", "description": "run anatomical workflows only", "optional": true, "type": "Flag", "value-key": "[ANAT_ONLY]", "command-line-flag": "--anat-only"}, {"id": "boilerplate_only", "name": "boilerplate_only", "description": "generate boilerplate only", "optional": true, "type": "Flag", "value-key": "[BOILERPLATE_ONLY]", "command-line-flag": "--boilerplate_only"}, {"id": "md_only_boilerplate", "name": "md_only_boilerplate", "description": "skip generation of HTML and LaTeX formatted citation with pandoc", "optional": true, "type": "Flag", "value-key": "[MD_ONLY_BOILERPLATE]", "command-line-flag": "--md-only-boilerplate"}, {"id": "aroma_err_on_warn", "name": "aroma_err_on_warn", "description": "Raise an error if ICA_AROMA does not produce sensible output (e.g., if all the components are classified as signal or noise)", "optional": true, "type": "Flag", "value-key": "[AROMA_ERR_ON_WARN]", "command-line-flag": "--error-on-aroma-warnings"}, {"id": "verbose_count", "name": "verbose_count", "description": "increases log verbosity for each occurrence, debug level is -vvv", "optional": true, "type": "String", "value-key": "[VERBOSE_COUNT]", "value-choices": ["-v", "-vv", "-vvv"]}, {"id": "ignore", "name": "ignore", "description": "ignore selected aspects of the input dataset to disable corresponding parts of the workflow (a space delimited list)", "optional": true, "type": "String", "value-key": "[IGNORE]", "list": true, "value-choices": ["fieldmaps", "slicetiming", "sbref", "t2w", "flair"], "command-line-flag": "--ignore"}, {"id": "longitudinal", "name": "longitudinal", "description": "treat dataset as longitudinal - may increase runtime", "optional": true, "type": "Flag", "value-key": "[LONGITUDINAL]", "command-line-flag": "--longitudinal"}, {"id": "output_spaces", "name": "output_spaces", "description": "Standard and non-standard spaces to resample anatomical and functional images to. Standard spaces may be specified by the form ``<SPACE>[:cohort-<label>][:res-<resolution>][...]``, where ``<SPACE>`` is a keyword designating a spatial reference, and may be followed by optional, colon-separated parameters. Non-standard spaces imply specific orientations and sampling grids. Important to note, the ``res-*`` modifier does not define the resolution used for the spatial normalization. To generate no BOLD outputs, use this option without specifying any spatial references. For further details, please check out https://fmriprep.readthedocs.io/en/20.2.7/spaces.html", "optional": true, "list": true, "type": "String", "value-key": "[OUTPUT_SPACES]", "command-line-flag": "--output-spaces"}, {"id": "bold2t1w_init", "name": "bold2t1w_init", "description": "Either \"register\" (the default) to initialize volumes at center or \"header\" to use the header information when coregistering BOLD to T1w images.", "optional": true, "type": "String", "value-key": "[BOLD2T1W_INIT]", "default-value": "register", "value-choices": ["register", "header"], "command-line-flag": "--bold2t1w-init"}, {"id": "bold2t1w_dof", "name": "bold2t1w_dof", "description": "Degrees of freedom when registering BOLD to T1w images. 6 degrees (rotation and translation) are used by default.", "optional": true, "type": "Number", "value-key": "[BOLD2T1W_DOF]", "default-value": 6, "value-choices": [6, 9, 12], "command-line-flag": "--bold2t1w-dof"}, {"id": "use_bbr", "name": "use_bbr", "description": "Always use boundary-based registration (no goodness-of-fit checks)", "optional": true, "type": "Flag", "value-key": "[USE_BBR]", "command-line-flag": "--force-bbr"}, {"id": "medial_surface_nan", "name": "medial_surface_nan", "description": "Replace medial wall values with NaNs on functional GIFTI files. Only performed for GIFTI files mapped to a freesurfer subject (fsaverage or fsnative).", "optional": true, "type": "Flag", "value-key": "[MEDIAL_SURFACE_NAN]", "command-line-flag": "--medial-surface-nan"}, {"id": "slice_time_ref", "name": "slice_time_ref", "description": "The time of the reference slice to correct BOLD values to, as a fraction acquisition time. 0 indicates the start, 0.5 the midpoint, and 1 the end of acquisition. The alias `start` corresponds to 0, and `middle` to 0.5. The default value is 0.5.", "optional": true, "type": "String", "value-key": "[SLICE_TIME_REF]", "command-line-flag": "--slice-time-ref"}, {"id": "dummy_scans", "name": "dummy_scans", "description": "Number of non steady state volumes.", "optional": true, "type": "Number", "value-key": "[DUMMY_SCANS]", "command-line-flag": "--dummy-scans"}, {"id": "_random_seed", "name": "_random_seed", "description": "Initialize the random seed for the workflow", "optional": true, "type": "Number", "value-key": "[_RANDOM_SEED]", "command-line-flag": "--random-seed"}, {"id": "use_aroma", "name": "use_aroma", "description": "add ICA_AROMA to your preprocessing stream", "optional": true, "type": "Flag", "value-key": "[USE_AROMA]", "command-line-flag": "--use-aroma"}, {"id": "aroma_melodic_dim", "name": "aroma_melodic_dim", "description": "Exact or maximum number of MELODIC components to estimate (positive = exact, negative = maximum)", "optional": true, "type": "Number", "value-key": "[AROMA_MELODIC_DIM]", "default-value": -200, "command-line-flag": "--aroma-melodic-dimensionality"}, {"id": "regressors_all_comps", "name": "regressors_all_comps", "description": "Include all components estimated in CompCor decomposition in the confounds file instead of only the components sufficient to explain 50 percent of BOLD variance in each CompCor mask", "optional": true, "type": "Flag", "value-key": "[REGRESSORS_ALL_COMPS]", "command-line-flag": "--return-all-components"}, {"id": "regressors_fd_th", "name": "regressors_fd_th", "description": "Threshold for flagging a frame as an outlier on the basis of framewise displacement", "optional": true, "type": "Number", "value-key": "[REGRESSORS_FD_TH]", "default-value": 0.5, "command-line-flag": "--fd-spike-threshold"}, {"id": "regressors_dvars_th", "name": "regressors_dvars_th", "description": "Threshold for flagging a frame as an outlier on the basis of standardised DVARS", "optional": true, "type": "Number", "value-key": "[REGRESSORS_DVARS_TH]", "default-value": 1.5, "command-line-flag": "--dvars-spike-threshold"}, {"id": "skull_strip_template", "name": "skull_strip_template", "description": "select a template for skull-stripping with antsBrainExtraction", "optional": true, "type": "String", "value-key": "[SKULL_STRIP_TEMPLATE]", "default-value": "OASIS30ANTs", "command-line-flag": "--skull-strip-template"}, {"id": "skull_strip_fixed_seed", "name": "skull_strip_fixed_seed", "description": "do not use a random seed for skull-stripping - will ensure run-to-run replicability when used with --omp-nthreads 1 and matching --random-seed <int>", "optional": true, "type": "Flag", "value-key": "[SKULL_STRIP_FIXED_SEED]", "command-line-flag": "--skull-strip-fixed-seed"}, {"id": "skull_strip_t1w", "name": "skull_strip_t1w", "description": "determiner for T1-weighted skull stripping ('"'"'force'"'"' ensures skull stripping, '"'"'skip'"'"' ignores skull stripping, and '"'"'auto'"'"' applies brain extraction based on the outcome of a heuristic to check whether the brain is already masked).", "optional": true, "type": "String", "value-key": "[SKULL_STRIP_T1W]", "default-value": "force", "value-choices": ["auto", "skip", "force"], "command-line-flag": "--skull-strip-t1w"}, {"id": "fmap_bspline", "name": "fmap_bspline", "description": "fit a B-Spline field using least-squares (experimental)", "optional": true, "type": "Flag", "value-key": "[FMAP_BSPLINE]", "command-line-flag": "--fmap-bspline"}, {"id": "fmap_no_demean", "name": "fmap_no_demean", "description": "do not remove median (within mask) from fieldmap", "optional": true, "type": "Flag", "value-key": "[FMAP_NO_DEMEAN]", "command-line-flag": "--fmap-no-demean"}, {"id": "use_syn_sdc", "name": "use_syn_sdc", "description": "EXPERIMENTAL: Use fieldmap-free distortion correction", "optional": true, "type": "Flag", "value-key": "[USE_SYN_SDC]", "command-line-flag": "--use-syn-sdc"}, {"id": "force_syn", "name": "force_syn", "description": "EXPERIMENTAL/TEMPORARY: Use SyN correction in addition to fieldmap correction, if available", "optional": true, "type": "Flag", "value-key": "[FORCE_SYN]", "command-line-flag": "--force-syn"}, {"id": "fs_license_file", "name": "fs_license_file", "description": "Path to FreeSurfer license key file. Get it (for free) by registering at https://surfer.nmr.mgh.harvard.edu/registration.html", "optional": true, "type": "String", "value-key": "[FS_LICENSE_FILE]", "command-line-flag": "--fs-license-file"}, {"id": "fs_subjects_dir", "name": "fs_subjects_dir", "description": "Path to existing FreeSurfer subjects directory to reuse. (default: OUTPUT_DIR/freesurfer)", "optional": true, "type": "String", "value-key": "[FS_SUBJECTS_DIR]", "command-line-flag": "--fs-subjects-dir"}, {"id": "hires", "name": "hires", "description": "disable sub-millimeter (hires) reconstruction", "optional": true, "type": "Flag", "value-key": "[HIRES]", "command-line-flag": "--no-submm-recon"}, {"id": "cifti_output", "name": "cifti_output", "description": "output preprocessed BOLD as a CIFTI dense timeseries. Optionally, the number of grayordinate can be specified (default is 91k, which equates to 2mm resolution)", "optional": true, "type": "String", "value-key": "[CIFTI_OUTPUT]", "value-choices": ["91k", "170k"], "command-line-flag": "--cifti-output"}, {"id": "run_reconall", "name": "run_reconall", "description": "disable FreeSurfer surface preprocessing.", "optional": true, "type": "Flag", "value-key": "[RUN_RECONALL]", "command-line-flag": "--fs-no-reconall"}, {"id": "output_layout", "name": "output_layout", "description": "Organization of outputs. legacy (default) creates derivative datasets as subdirectories of outputs. bids places fMRIPrep derivatives directly in the output directory, and defaults to placing FreeSurfer derivatives in <output-dir>/sourcedata/freesurfer.", "optional": true, "type": "String", "value-key": "[OUTPUT_LAYOUT]", "default-value": "legacy", "value-choices": ["bids", "legacy"], "command-line-flag": "--output-layout"}, {"id": "work_dir", "name": "work_dir", "description": "path where intermediate results should be stored", "optional": true, "type": "String", "value-key": "[WORK_DIR]", "command-line-flag": "-w"}, {"id": "clean_workdir", "name": "clean_workdir", "description": "Clears working directory of contents. Use of this flag is notrecommended when running concurrent processes of fMRIPrep.", "optional": true, "type": "Flag", "value-key": "[CLEAN_WORKDIR]", "command-line-flag": "--clean-workdir"}, {"id": "resource_monitor", "name": "resource_monitor", "description": "enable Nipype'"'"'s resource monitoring to keep track of memory and CPU usage", "optional": true, "type": "Flag", "value-key": "[RESOURCE_MONITOR]", "command-line-flag": "--resource-monitor"}, {"id": "reports_only", "name": "reports_only", "description": "only generate reports, don'"'"'t run workflows. This will only rerun report aggregation, not reportlet generation for specific nodes.", "optional": true, "type": "Flag", "value-key": "[REPORTS_ONLY]", "command-line-flag": "--reports-only"}, {"id": "config_file", "name": "config_file", "description": "Use pre-generated configuration file. Values in file will be overridden by command-line arguments.", "optional": true, "type": "String", "value-key": "[CONFIG_FILE]", "command-line-flag": "--config-file"}, {"id": "write_graph", "name": "write_graph", "description": "Write workflow graph.", "optional": true, "type": "Flag", "value-key": "[WRITE_GRAPH]", "command-line-flag": "--write-graph"}, {"id": "stop_on_first_crash", "name": "stop_on_first_crash", "description": "Force stopping on first crash, even if a work directory was specified.", "optional": true, "type": "Flag", "value-key": "[STOP_ON_FIRST_CRASH]", "command-line-flag": "--stop-on-first-crash"}, {"id": "notrack", "name": "notrack", "description": "Opt-out of sending tracking information of this run to the FMRIPREP developers. This information helps to improve FMRIPREP and provides an indicator of real world usage crucial for obtaining funding.", "optional": true, "type": "Flag", "value-key": "[NOTRACK]", "command-line-flag": "--notrack"}, {"id": "debug", "name": "debug", "description": "Debug mode(s) to enable. '"'"'all'"'"' is alias for all available modes.", "optional": true, "type": "String", "value-key": "[DEBUG]", "list": true, "value-choices": ["compcor", "all"], "command-line-flag": "--debug"}, {"id": "sloppy", "name": "sloppy", "description": "Use low-quality tools for speed - TESTING ONLY", "optional": true, "type": "Flag", "value-key": "[SLOPPY]", "command-line-flag": "--sloppy"}], "tags": {}, "suggested-resources": {"cpu-cores": 8, "ram": 8, "walltime-estimate": 480}, "custom": {"nipoppy": {"CONTAINER_CONFIG": {"ARGS": ["--bind", "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1"]}}, "nipoppy_old": {"paths_to_tar": ["/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output/fmriprep/sub-126BPCP021001/ses-ses-1", "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1/sub-126BPCP021001"]}}}' '{"bids_dir": "/cubric/collab/487_mvpa/poppy-effex/dataset/bids", "output_dir": "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output", "analysis_level": "participant", "skip_bids_validation": true, "participant_label": ["126BPCP021001"], "bids_database_dir": "/cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7", "nprocs": "8", "omp_nthreads": "4", "memory_gb": "4G", "anat_only": true, "verbose_count": "-v", "output_spaces": ["MNI152NLin2009cAsym"], "regressors_all_comps": true, "fs_license_file": "/home/saptaf1/freesurfer_license.txt", "fs_subjects_dir": "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1", "work_dir": "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7", "write_graph": true, "notrack": true}'
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] /usr/local/miniconda/lib/python3.7/site-packages/bids/config.py:40: FutureWarning: Setting 'extension_initial_dot' will be removed in pybids 0.16.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   FutureWarning)
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] You are using fMRIPrep-20.2.7, and a newer version of fMRIPrep is available: 24.0.1.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Please check out our documentation about how and when to upgrade:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] https://fmriprep.readthedocs.io/en/latest/faq.html#upgrading
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:57:28,996 nipype.workflow IMPORTANT:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]     Running fMRIPREP version 20.2.7:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]       * BIDS dataset path: /cubric/collab/487_mvpa/poppy-effex/dataset/bids.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]       * Participant list: ['126BPCP021001'].
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]       * Run identifier: 20240807-115714_b1f9b98d-fe8a-49f6-a60c-fb87592abfd2.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]       * Output spaces: MNI152NLin2009cAsym:res-native.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]       * Pre-run FreeSurfer's SUBJECTS_DIR: /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_T1w.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/32.4M [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 51.2k/32.4M [00:00<01:41, 318kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   1%|          | 260k/32.4M [00:00<00:36, 887kB/s] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   3%|▎         | 915k/32.4M [00:00<00:11, 2.82MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   4%|▍         | 1.26M/32.4M [00:00<00:11, 2.64MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   8%|▊         | 2.54M/32.4M [00:00<00:05, 5.56MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  15%|█▌        | 4.99M/32.4M [00:00<00:02, 11.1MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  26%|██▋       | 8.54M/32.4M [00:00<00:01, 18.3MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  35%|███▌      | 11.3M/32.4M [00:00<00:01, 20.6MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  46%|████▋     | 15.0M/32.4M [00:01<00:00, 25.4MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  56%|█████▋    | 18.2M/32.4M [00:01<00:00, 27.4MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  67%|██████▋   | 21.8M/32.4M [00:01<00:00, 29.6MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  78%|███████▊  | 25.3M/32.4M [00:01<00:00, 30.5MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  89%|████████▉ | 28.8M/32.4M [00:01<00:00, 31.9MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 32.4M/32.4M [00:01<00:00, 20.4MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_label-brain_probseg.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/2.59M [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   2%|▏         | 43.0k/2.59M [00:00<00:09, 260kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  10%|▉         | 252k/2.59M [00:00<00:02, 845kB/s] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  31%|███       | 792k/2.59M [00:00<00:00, 1.94MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  67%|██████▋   | 1.75M/2.59M [00:00<00:00, 4.08MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 2.59M/2.59M [00:00<00:00, 3.87MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_desc-BrainCerebellumExtraction_mask.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/265k [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  20%|█▉        | 52.2k/265k [00:00<00:00, 310kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 265k/265k [00:00<00:00, 1.02MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_label-WM_probseg.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/4.06M [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   1%|▏         | 52.2k/4.06M [00:00<00:12, 327kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   6%|▋         | 261k/4.06M [00:00<00:04, 921kB/s] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  24%|██▍       | 992k/4.06M [00:00<00:00, 3.15MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  55%|█████▍    | 2.21M/4.06M [00:00<00:00, 5.41MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 4.06M/4.06M [00:00<00:00, 6.64MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_label-BS_probseg.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/447k [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   8%|▊         | 34.8k/447k [00:00<00:02, 177kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  42%|████▏     | 189k/447k [00:00<00:00, 667kB/s] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  72%|███████▏  | 324k/447k [00:00<00:00, 736kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 447k/447k [00:00<00:00, 773kB/s]240807-11:57:40,337 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 fMRIPrep workflow graph with 164 nodes built successfully.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:57:44,196 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 Generated workflow graph: /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/graph.svg (graph2use=colored, simple_form=True).
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:00,697 nipype.workflow IMPORTANT:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 fMRIPrep started!
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:00,830 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 Workflow fmriprep_wf settings: ['check', 'execution', 'logging', 'monitoring']
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,25 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 Running in parallel.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,26 nipype.workflow WARNING:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 Some nodes exceed the total amount of memory available (4.00GB).
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,35 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 9 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,154 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.spacesource" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/_in_tuple_MNI152NLin2009cAsym.resnative/spacesource".
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,175 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Executing "spacesource" <niworkflows.interfaces.space.SpaceDataSource>
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,176 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Finished "spacesource", elapsed time 0.000239s.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,190 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Job 0] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.spacesource).
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,310 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_reports_wf.tf_select" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_reports_wf/_template_MNI152NLin2009cAsym/tf_select".
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:01,328 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Executing "tf_select" <smriprep.interfaces.templateflow.TemplateFlowSelect>
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/13.7M [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 60.4k/13.7M [00:00<00:36, 374kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   2%|▏         | 313k/13.7M [00:00<00:12, 1.07MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   6%|▋         | 887k/13.7M [00:00<00:04, 2.66MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  10%|█         | 1.38M/13.7M [00:00<00:04, 2.96MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  16%|█▋        | 2.25M/13.7M [00:00<00:02, 4.62MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  30%|██▉       | 4.10M/13.7M [00:00<00:01, 8.66MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  40%|████      | 5.52M/13.7M [00:00<00:00, 9.46MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  54%|█████▍    | 7.41M/13.7M [00:01<00:00, 12.1MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  69%|██████▉   | 9.43M/13.7M [00:01<00:00, 14.4MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  83%|████████▎ | 11.4M/13.7M [00:01<00:00, 14.4MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  98%|█████████▊| 13.4M/13.7M [00:01<00:00, 16.1MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 13.7M/13.7M [00:01<00:00, 10.2MB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] Downloading https://templateflow.s3.amazonaws.com/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_desc-brain_mask.nii.gz
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]   0%|          | 0.00/160k [00:00<?, ?B/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT]  32%|███▏      | 51.2k/160k [00:00<00:00, 325kB/s]
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 100%|██████████| 160k/160k [00:00<00:00, 656kB/s] 240807-11:58:04,106 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Finished "tf_select", elapsed time 2.777284s.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,142 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Job 3] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_reports_wf.tf_select).
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,246 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.split_desc" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_norm_wf/_template_MNI152NLin2009cAsym/split_desc".
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,307 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Executing "split_desc" <smriprep.interfaces.templateflow.TemplateDesc>
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,310 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Finished "split_desc", elapsed time 0.000235s.
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,366 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Job 4] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.split_desc).
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,489 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.about" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/about".
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,559 nipype.workflow INFO:
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 	 [Node] Executing "about" <fmriprep.interfaces.reports.AboutSummary>
+[2024-08-07 11:58:04] INFO    [RUN STDOUT] 240807-11:58:04,575 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "about", elapsed time 0.012871s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:04,677 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 10] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.about).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:04,784 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:04,912 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2" <niworkflows.interfaces.bids.BIDSFreeSurferDir>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:07,703 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.full_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/full_wm".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:07,776 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_tmpl" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/lap_tmpl".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:07,979 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "full_wm" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:07,984 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "lap_tmpl" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:08,954 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "full_wm", elapsed time 0.972506s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:09,391 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.res_tmpl" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/res_tmpl".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:09,449 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "res_tmpl" <niworkflows.interfaces.images.RegridToZooms>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,107 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.bidssrc" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/bidssrc".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,123 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "bidssrc" <niworkflows.interfaces.bids.BIDSDataGrabber>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,126 nipype.interface INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 No "t2w" images found for sub-126BPCP021001
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,126 nipype.interface INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 No "flair" images found for sub-126BPCP021001
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,126 nipype.interface INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 No "sbref" images found for sub-126BPCP021001
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,126 nipype.interface INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 No "roi" images found for sub-126BPCP021001
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:10,127 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "bidssrc", elapsed time 0.000714s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:11,304 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "res_tmpl", elapsed time 1.8527019999999998s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:19,958 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "lap_tmpl", elapsed time 11.883433s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:19,984 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2", elapsed time 15.06493s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:19,998 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 77] Completed (fmriprep_wf.fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,148 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 6] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_tmpl).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,149 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 8] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.full_wm).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,150 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 9] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.res_tmpl).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,152 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 11] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.bidssrc).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,154 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 7 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,237 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.select_tpl" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/_in_tuple_MNI152NLin2009cAsym.resnative/select_tpl".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,254 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "select_tpl" <smriprep.interfaces.templateflow.TemplateFlowSelect>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,286 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "select_tpl", elapsed time 0.030183s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,297 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 1] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.select_tpl).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,380 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.gen_tplid" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/_in_tuple_MNI152NLin2009cAsym.resnative/gen_tplid".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,395 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "gen_tplid" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,397 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "gen_tplid", elapsed time 0.000491s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,407 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 2] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.gen_tplid).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,490 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.tf_select" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_norm_wf/_template_MNI152NLin2009cAsym/tf_select".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,506 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "tf_select" <smriprep.interfaces.templateflow.TemplateFlowSelect>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,529 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "tf_select", elapsed time 0.021562s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,540 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 5] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.tf_select).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,627 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.ds_report_about" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/ds_report_about".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,627 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.mrg_tmpl" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/mrg_tmpl".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,652 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "ds_report_about" <fmriprep.interfaces.DerivativesDataSink>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,685 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "ds_report_about", elapsed time 0.030956s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,696 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 75] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.ds_report_about).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,731 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Executing "mrg_tmpl" <nipype.interfaces.utility.base.Merge>
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:20,733 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Finished "mrg_tmpl", elapsed time 0.000288s.
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:22,87 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_template_wf.t1w_ref_dimensions" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_template_wf/t1w_ref_dimensions".
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:22,149 nipype.workflow INFO:
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 	 [Job 7] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.mrg_tmpl).
+[2024-08-07 11:58:22] INFO    [RUN STDOUT] 240807-11:58:22,152 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 6/8.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.bids_info
+[2024-08-07 11:58:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_template_wf.t1w_ref_dimensions
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:22,989 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "t1w_ref_dimensions" <niworkflows.interfaces.images.TemplateDimensions>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:23,109 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "t1w_ref_dimensions", elapsed time 0.116364s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:23,154 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.bids_info" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/bids_info".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:23,173 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "bids_info" <niworkflows.interfaces.bids.BIDSInfo>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:23,190 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "bids_info", elapsed time 0.013485s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,152 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 12] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_template_wf.t1w_ref_dimensions).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,154 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 76] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.bids_info).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,158 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 5 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,288 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_reports_wf.t1w_conform_check" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_reports_wf/t1w_conform_check".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,306 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "t1w_conform_check" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,307 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "t1w_conform_check", elapsed time 0.000528s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,319 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 13] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_reports_wf.t1w_conform_check).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,444 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.raw_sources" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/raw_sources".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,448 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.summary" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/summary".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,449 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.fs_isrunning" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/fs_isrunning".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,468 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "summary" <fmriprep.interfaces.reports.SubjectSummary>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,472 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "fs_isrunning" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,473 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "fs_isrunning", elapsed time 0.000666s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,476 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "summary", elapsed time 0.006051s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:24,487 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 138] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.summary).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:25,856 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "_t1w_conform0" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_template_wf/t1w_conform/mapflow/_t1w_conform0".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:25,871 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "_t1w_conform0" <niworkflows.interfaces.images.Conform>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:25,893 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "_t1w_conform0", elapsed time 0.021324s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:25,900 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "raw_sources" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:25,902 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "raw_sources", elapsed time 0.0006s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,153 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 15] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.raw_sources).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,155 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 16] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_template_wf.t1w_conform).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,156 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 78] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.fs_isrunning).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,160 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,286 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_reports_wf.ds_t1w_conform_report" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_reports_wf/ds_t1w_conform_report".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,304 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "ds_t1w_conform_report" <smriprep.interfaces.DerivativesDataSink>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,320 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "ds_t1w_conform_report", elapsed time 0.015095s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,331 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 14] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_reports_wf.ds_t1w_conform_report).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,454 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.ds_report_summary" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/ds_report_summary".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,456 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_template_wf.get1st" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_template_wf/get1st".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,473 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "get1st" <nipype.interfaces.utility.base.Select>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,475 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "get1st", elapsed time 0.000461s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,477 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "ds_report_summary" <fmriprep.interfaces.DerivativesDataSink>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,498 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "ds_report_summary", elapsed time 0.019079s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:26,510 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 139] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.ds_report_summary).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:28,155 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 17] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_template_wf.get1st).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:28,160 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:28,256 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_validate" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_validate".
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:28,274 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Executing "anat_validate" <niworkflows.interfaces.images.ValidateImage>
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:28,296 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Node] Finished "anat_validate", elapsed time 0.020529s.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:28,309 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [Job 18] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_validate).
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:30,159 nipype.workflow INFO:
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 11:58:30] INFO    [RUN STDOUT] 240807-11:58:30,257 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fov_check" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/fov_check".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:30,284 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "_truncate_images0" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/truncate_images/mapflow/_truncate_images0".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:30,298 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "_truncate_images0" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:31,539 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "fov_check" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:31,706 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.recon_config" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/recon_config".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:32,147 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "fov_check", elapsed time 0.607085s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:32,161 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 3 tasks, and 0 jobs ready. Free memory (GB): 3.40/4.00, Free processors: 5/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.truncate_images
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.recon_config
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fov_check
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:32,624 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "recon_config" <niworkflows.interfaces.freesurfer.FSDetectInputs>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:32,643 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "recon_config", elapsed time 0.01658s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:34,161 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 19] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fov_check).
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:34,162 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 20] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.recon_config).
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:34,165 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.truncate_images
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:37,382 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "_truncate_images0", elapsed time 6.879213s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:38,165 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 21] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.truncate_images).
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:38,169 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:38,294 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "_inu_n40" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/inu_n4/mapflow/_inu_n40".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:38,310 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "_inu_n40" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-11:58:40,170 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:13,258 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "_inu_n40", elapsed time 94.69665s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:14,262 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 22] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4).
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:14,265 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:14,389 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_target" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/lap_target".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:14,390 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.res_target" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/res_target".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:14,406 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "lap_target" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:14,407 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "res_target" <niworkflows.interfaces.images.RegridToZooms>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:16,265 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 6/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.res_target
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_target
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:16,593 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "res_target", elapsed time 2.184391s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:18,266 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 25] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.res_target).
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:18,269 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_target
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:18,394 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.init_aff" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/init_aff".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:18,418 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "init_aff" <nipype.interfaces.ants.utils.AI>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:20,269 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.init_aff
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_target
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:28,727 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "lap_target", elapsed time 14.164911s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:30,277 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 23] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.lap_target).
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:30,280 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.init_aff
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:30,400 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.mrg_target" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/mrg_target".
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:30,422 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Executing "mrg_target" <nipype.interfaces.utility.base.Merge>
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:30,423 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Node] Finished "mrg_target", elapsed time 0.000253s.
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 240807-12:00:32,279 nipype.workflow INFO:
+[2024-08-07 12:00:32] INFO    [RUN STDOUT] 	 [Job 24] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.mrg_target).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:00:32,282 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.init_aff
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:01:06,519 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "init_aff", elapsed time 47.934972s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:01:08,316 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 26] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.init_aff).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:01:08,321 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:01:08,475 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.norm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/norm".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:01:08,880 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "norm" <niworkflows.interfaces.fixes.FixHeaderRegistration>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:01:10,321 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 1.00/4.00, Free processors: 4/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.norm
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,73 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "norm", elapsed time 1270.181725s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,617 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 27] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.norm).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,620 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,704 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.map_wmmask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/map_wmmask".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,705 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.map_brainmask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/map_brainmask".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,735 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "map_brainmask" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:19,751 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "map_wmmask" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:22:21,620 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 2.00/4.00, Free processors: 6/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.map_brainmask
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.map_wmmask
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:25,710 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "map_brainmask", elapsed time 65.972735s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:26,521 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "map_wmmask", elapsed time 66.542408s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,688 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 28] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.map_wmmask).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,690 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 30] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.map_brainmask).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,693 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,798 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.thr_brainmask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/thr_brainmask".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,816 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "thr_brainmask" <nipype.interfaces.ants.utils.ThresholdImage>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,820 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "_inu_n4_final0" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/inu_n4_final/mapflow/_inu_n4_final0".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:27,836 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "_inu_n4_final0" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,642 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "thr_brainmask", elapsed time 1.649063s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,690 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 31] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.thr_brainmask).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,692 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 3 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4_final
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,776 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.dil_brainmask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/dil_brainmask".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,777 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.03_pad_mask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/03_pad_mask".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,796 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "dil_brainmask" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:29,797 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "03_pad_mask" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:30,960 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "03_pad_mask", elapsed time 1.161601s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:31,691 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 32] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.03_pad_mask).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:31,694 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.dil_brainmask
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4_final
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:32,173 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Finished "dil_brainmask", elapsed time 2.240548s.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:33,693 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Job 33] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.dil_brainmask).
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:33,696 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4_final
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:33,785 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.get_brainmask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/get_brainmask".
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:33,800 nipype.workflow INFO:
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 	 [Node] Executing "get_brainmask" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:23:35] INFO    [RUN STDOUT] 240807-12:23:35,697 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.get_brainmask
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4_final
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:23:35,853 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "get_brainmask", elapsed time 2.051773s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:23:37,697 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 34] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.get_brainmask).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:23:37,700 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4_final
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,667 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "_inu_n4_final0", elapsed time 51.82732s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,741 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 29] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.inu_n4_final).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,745 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,864 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.01_atropos" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/01_atropos".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,887 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "01_atropos" <nipype.interfaces.ants.segmentation.Atropos>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,903 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "_apply_mask0" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/apply_mask/mapflow/_apply_mask0".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:19,922 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "_apply_mask0" <niworkflows.interfaces.nibabel.ApplyMask>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:20,972 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "_apply_mask0", elapsed time 1.048034s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:21,743 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 74] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.apply_mask).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:24:21,747 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 1.00/4.00, Free processors: 4/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.01_atropos
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:12,976 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "01_atropos", elapsed time 113.087108s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:13,859 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 35] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.01_atropos).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:13,862 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:13,945 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.match_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/match_wm".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:13,965 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "match_wm" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:13,966 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "match_wm", elapsed time 0.000447s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:13,977 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 36] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.match_wm).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:14,62 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.02_pad_segm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/02_pad_segm".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:14,80 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "02_pad_segm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:15,419 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "02_pad_segm", elapsed time 1.33732s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:15,861 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 42] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.02_pad_segm).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:15,865 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:15,958 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.overlap" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/overlap".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:15,979 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "overlap" <nipype.algorithms.metrics.FuzzyOverlap>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:19,984 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "overlap", elapsed time 4.003553s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:19,997 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 37] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.overlap).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,83 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.04_sel_labels
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,165 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.sel_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/sel_wm".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,165 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.04_sel_labels" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/04_sel_labels".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,183 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "04_sel_labels" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,184 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "sel_wm" <nipype.interfaces.utility.base.Select>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,185 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "sel_wm", elapsed time 0.000305s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,198 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 38] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.sel_wm).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:20,774 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "04_sel_labels", elapsed time 0.590219s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:22,84 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Job 43] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.04_sel_labels).
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:22,88 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 6 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:22,183 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.copy_xform_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/copy_xform_wm".
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:22,204 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Executing "copy_xform_wm" <niworkflows.interfaces.utils.CopyXForm>
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:23,377 nipype.workflow INFO:
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 	 [Node] Finished "copy_xform_wm", elapsed time 1.172428s.
+[2024-08-07 12:26:23] INFO    [RUN STDOUT] 240807-12:26:23,391 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 39] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.copy_xform_wm).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,477 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.27_depad_csf" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/27_depad_csf".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,478 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.10_me_csf" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/10_me_csf".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,479 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.06_get_gm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/06_get_gm".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,484 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.05_get_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/05_get_wm".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,496 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "27_depad_csf" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,497 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "10_me_csf" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,497 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "06_get_gm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:23,502 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "05_get_wm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:24,86 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 4 tasks, and 2 jobs ready. Free memory (GB): 3.20/4.00, Free processors: 4/8.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.05_get_wm
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.06_get_gm
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.10_me_csf
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.27_depad_csf
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:24,191 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.apply_wm_prior" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/apply_wm_prior".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:24,212 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "apply_wm_prior" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:24,470 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Finished "27_depad_csf", elapsed time 0.972628s.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:25,602 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Finished "apply_wm_prior", elapsed time 1.387465s.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,60 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Finished "05_get_wm", elapsed time 2.5557309999999998s.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,87 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 44] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.27_depad_csf).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,88 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 52] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.05_get_wm).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,89 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 40] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.apply_wm_prior).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,92 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 3 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 6/8.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.06_get_gm
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.10_me_csf
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,126 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Finished "06_get_gm", elapsed time 2.626933s.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,196 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.09_relabel_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/09_relabel_wm".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,212 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "09_relabel_wm" <nipype.interfaces.ants.utils.MultiplyImages>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,220 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "_inu_n4_final0" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/inu_n4_final/mapflow/_inu_n4_final0".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:26,241 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "_inu_n4_final0" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:27,632 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Finished "09_relabel_wm", elapsed time 1.4190209999999999s.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,89 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 46] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.06_get_gm).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,90 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 53] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.09_relabel_wm).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,93 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 3 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.10_me_csf
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,177 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.07_fill_gm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/07_fill_gm".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,178 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.26_depad_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/26_depad_wm".
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,194 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "07_fill_gm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:28,196 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Executing "26_depad_wm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:29,459 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Node] Finished "26_depad_wm", elapsed time 1.2618070000000001s.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:30,91 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [Job 54] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.26_depad_wm).
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 240807-12:26:30,93 nipype.workflow INFO:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT] 	 [MultiProc] Running 3 tasks, and 1 jobs ready. Free memory (GB): 3.40/4.00, Free processors: 2/8.
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.07_fill_gm
+[2024-08-07 12:26:30] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.10_me_csf
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:31,863 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "10_me_csf", elapsed time 8.363697s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:32,93 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 45] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.10_me_csf).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:32,96 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.07_fill_gm
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:44,478 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "07_fill_gm", elapsed time 16.281018s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:46,107 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 47] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.07_fill_gm).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:46,110 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:46,199 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.08_mult_gm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/08_mult_gm".
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:46,245 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Executing "08_mult_gm" <nipype.interfaces.ants.utils.MultiplyImages>
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:48,67 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "08_mult_gm", elapsed time 1.8208090000000001s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:48,109 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 48] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.08_mult_gm).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:48,112 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:48,197 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.11_add_gm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/11_add_gm".
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:48,217 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Executing "11_add_gm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:50,113 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.11_add_gm
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:53,325 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "11_add_gm", elapsed time 5.105467s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:54,116 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 49] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.11_add_gm).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:54,118 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:54,211 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.12_relabel_gm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/12_relabel_gm".
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:54,229 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Executing "12_relabel_gm" <nipype.interfaces.ants.utils.MultiplyImages>
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:55,462 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "12_relabel_gm", elapsed time 1.231739s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:56,118 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 50] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.12_relabel_gm).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:56,121 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 3 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:56,205 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.25_depad_gm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/25_depad_gm".
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:56,205 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.13_add_gm_wm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/13_add_gm_wm".
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:56,221 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Executing "25_depad_gm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:56,223 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Executing "13_add_gm_wm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:57,595 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "25_depad_gm", elapsed time 1.3726340000000001s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:58,120 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 51] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.25_depad_gm).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:58,123 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 2 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.13_add_gm_wm
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:58,206 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.merge_tpms" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/merge_tpms".
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:58,238 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Executing "merge_tpms" <nipype.interfaces.utility.base.Merge>
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:26:58,240 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "merge_tpms", elapsed time 0.0003s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:27:00,122 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 55] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.merge_tpms).
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:27:00,125 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.13_add_gm_wm
+[2024-08-07 12:27:02] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:27:01,616 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Node] Finished "13_add_gm_wm", elapsed time 5.391211s.
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 240807-12:27:02,124 nipype.workflow INFO:
+[2024-08-07 12:27:02] INFO    [RUN STDOUT] 	 [Job 56] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.13_add_gm_wm).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:02,127 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 3 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:02,218 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.24_depad_segm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/24_depad_segm".
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:02,223 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.14_sel_labels2" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/14_sel_labels2".
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:02,266 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Executing "14_sel_labels2" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:02,266 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Executing "24_depad_segm" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:03,479 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "14_sel_labels2", elapsed time 1.21158s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:04,125 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Job 58] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.14_sel_labels2).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:04,128 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 2 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.24_depad_segm
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:04,219 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.15_add_7" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/15_add_7".
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:04,222 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "24_depad_segm", elapsed time 1.953455s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:05,70 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Executing "15_add_7" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:06,127 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Job 57] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.24_depad_segm).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:06,130 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.15_add_7
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:09,956 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "15_add_7", elapsed time 4.883711s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:10,132 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Job 59] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.15_add_7).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:10,136 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:10,235 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.16_me_7" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/16_me_7".
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:10,267 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Executing "16_me_7" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:12,135 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.16_me_7
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:16,151 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "16_me_7", elapsed time 5.881924s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:18,140 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Job 60] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.16_me_7).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:18,142 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 4/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:18,227 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.17_comp_7" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/17_comp_7".
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:18,245 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Executing "17_comp_7" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:20,143 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 3/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.17_comp_7
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:20,857 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "_inu_n4_final0", elapsed time 54.612089s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:22,144 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Job 41] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.inu_n4_final).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:22,147 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.17_comp_7
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:22,229 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "17_comp_7", elapsed time 3.982017s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:24,146 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Job 61] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.17_comp_7).
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:24,149 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:24,237 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.18_md_7" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/18_md_7".
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:24,259 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Executing "18_md_7" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:26,150 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.18_md_7
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:27,477 nipype.workflow INFO:
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 	 [Node] Finished "18_md_7", elapsed time 3.2166230000000002s.
+[2024-08-07 12:27:28] INFO    [RUN STDOUT] 240807-12:27:28,151 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 62] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.18_md_7).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:28,155 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:28,254 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.19_fill_7" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/19_fill_7".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:28,275 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "19_fill_7" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:30,154 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.19_fill_7
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:43,10 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "19_fill_7", elapsed time 14.733551s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:44,168 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 63] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.19_fill_7).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:44,172 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:44,308 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.20_add_7_2" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/20_add_7_2".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:44,338 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "20_add_7_2" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:46,171 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.20_add_7_2
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:49,334 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "20_add_7_2", elapsed time 4.993481s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:50,173 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 64] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.20_add_7_2).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:50,177 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:50,308 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.21_md_7_2" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/21_md_7_2".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:50,326 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "21_md_7_2" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:52,176 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.21_md_7_2
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:53,199 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "21_md_7_2", elapsed time 2.871255s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:54,178 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 65] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.21_md_7_2).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:54,182 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:54,316 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.22_me_7_2" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/22_me_7_2".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:54,335 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "22_me_7_2" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:56,181 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.22_me_7_2
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:27:59,892 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "22_me_7_2", elapsed time 5.55535s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:00,183 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 66] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.22_me_7_2).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:00,186 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:00,315 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.23_depad_mask" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/23_depad_mask".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:00,336 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "23_depad_mask" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:01,562 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "23_depad_mask", elapsed time 1.223828s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:02,185 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 67] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.23_depad_mask).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:02,189 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:02,324 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.msk_conform" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/msk_conform".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:02,347 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "msk_conform" <nipype.interfaces.utility.wrappers.Function>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:02,697 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "msk_conform", elapsed time 0.348258s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:04,187 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 68] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.msk_conform).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:04,190 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:04,316 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.copy_xform" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/copy_xform".
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:04,362 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Executing "copy_xform" <niworkflows.interfaces.utils.CopyXForm>
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:13,42 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Node] Finished "copy_xform", elapsed time 8.678056s.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:13,56 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [Job 69] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.copy_xform).
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:13,209 nipype.workflow INFO:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 4 jobs ready. Free memory (GB): 0.00/4.00, Free processors: 4/8.
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:28:13] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.autorecon1
+[2024-08-07 12:28:13] INFO    [RUN STDOUT] 240807-12:28:13,216 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.autorecon1" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/autorecon1".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:28:13,244 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "autorecon1" <smriprep.interfaces.freesurfer.ReconAll>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,325 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "autorecon1", elapsed time 484.078267s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,725 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 79] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.autorecon1).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,730 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 5 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,865 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.trunc_mov" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_norm_wf/_template_MNI152NLin2009cAsym/trunc_mov".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,866 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.ds_t1w_preproc" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/ds_t1w_preproc".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,867 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.gen_ref" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/_in_tuple_MNI152NLin2009cAsym.resnative/gen_ref".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,896 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "trunc_mov" <nipype.interfaces.ants.utils.ImageMath>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,902 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "ds_t1w_preproc" <smriprep.interfaces.DerivativesDataSink>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:17,909 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "gen_ref" <niworkflows.interfaces.utils.GenerateSamplingReference>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:19,612 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "gen_ref", elapsed time 1.701309s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:20,876 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "ds_t1w_preproc", elapsed time 2.971783s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:20,888 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 72] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.ds_t1w_preproc).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:20,995 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 71] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.gen_ref).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:20,999 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [MultiProc] Running 3 tasks, and 0 jobs ready. Free memory (GB): 3.40/4.00, Free processors: 5/8.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fsnative2t1w_xfm
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.apply_mask
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.trunc_mov
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:21,16 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "_apply_mask0" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/apply_mask/mapflow/_apply_mask0".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:21,31 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "_apply_mask0" <niworkflows.interfaces.nibabel.ApplyMask>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:21,187 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fsnative2t1w_xfm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/fsnative2t1w_xfm".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:22,181 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "_apply_mask0", elapsed time 1.148505s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:22,261 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "fsnative2t1w_xfm" <niworkflows.interfaces.freesurfer.PatchedRobustRegister>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:22,997 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 73] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.brain_extraction_wf.atropos_wf.apply_mask).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:22,999 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 6/8.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fsnative2t1w_xfm
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.trunc_mov
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:23,163 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.skull_strip_extern" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/skull_strip_extern".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:23,186 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "skull_strip_extern" <niworkflows.interfaces.freesurfer.FSInjectBrainExtracted>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:24,703 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "trunc_mov", elapsed time 6.805314s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:24,999 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 70] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_norm_wf.trunc_mov).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:25,4 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 3.60/4.00, Free processors: 6/8.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.skull_strip_extern
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fsnative2t1w_xfm
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:26,343 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "skull_strip_extern", elapsed time 3.155988s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:27,2 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 86] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.skull_strip_extern).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:36:27,5 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 3.80/4.00, Free processors: 7/8.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                      Currently running:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT]                        * fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fsnative2t1w_xfm
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:28,471 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "fsnative2t1w_xfm", elapsed time 66.207186s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,63 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 80] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.fsnative2t1w_xfm).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,66 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 4.00/4.00, Free processors: 8/8.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,149 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.lta2itk_inv" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/lta2itk_inv".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,167 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Executing "lta2itk_inv" <niworkflows.interfaces.nitransforms.ConcatenateXFMs>
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,176 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Finished "lta2itk_inv", elapsed time 0.007775s.
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,188 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Job 81] Completed (fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.anat_derivatives_wf.lta2itk_inv).
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,398 nipype.workflow INFO:
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 	 [Node] Setting-up "fmriprep_wf.single_subject_126BPCP021001_wf.anat_preproc_wf.surface_recon_wf.t1w2fsnative_xfm" in "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/t1w2fsnative_xfm".
+[2024-08-07 12:37:29] INFO    [RUN STDOUT] 240807-12:37:29,415 nipype.workflow INFO:

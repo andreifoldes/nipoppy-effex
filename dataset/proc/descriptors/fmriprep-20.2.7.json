@@ -588,7 +588,7 @@
     ],
     "tags": {},
     "suggested-resources": {
-        "cpu-cores": 8,
+        "cpu-cores": 12,
         "ram": 8,
         "walltime-estimate": 480
     },

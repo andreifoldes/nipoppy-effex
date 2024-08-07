@@ -1,0 +1,26 @@
+[
+    [
+        "in_file",
+        [
+            [
+                "/cubric/collab/487_mvpa/poppy-effex/dataset/bids/sub-126BPCP021002/ses-1/func/sub-126BPCP021002_ses-1_task-rest_bold.nii.gz",
+                "783dbbcecda313ce7e95d380132861d6"
+            ]
+        ]
+    ],
+    [
+        "mc_method",
+        "AFNI"
+    ],
+    [
+        "multiecho",
+        false
+    ],
+    [
+        "needed_outputs",
+        [
+            "n_volumes_to_discard",
+            "ref_image"
+        ]
+    ]
+]

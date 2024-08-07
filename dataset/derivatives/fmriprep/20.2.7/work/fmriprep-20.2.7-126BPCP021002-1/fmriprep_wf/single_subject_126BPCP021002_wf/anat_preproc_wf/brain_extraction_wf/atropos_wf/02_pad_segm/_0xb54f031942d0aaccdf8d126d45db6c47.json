@@ -1,0 +1,31 @@
+[
+    [
+        "copy_header",
+        false
+    ],
+    [
+        "dimension",
+        3
+    ],
+    [
+        "op1",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/01_atropos/sub-126BPCP021002_ses-1_acq-mprage_T1w_corrected_labeled.nii.gz",
+            "c6a6555d5bf0657c8cfd420c75d35c0f"
+        ]
+    ],
+    [
+        "op2",
+        "10"
+    ],
+    [
+        "operation",
+        "PadImage"
+    ],
+    [
+        "needed_outputs",
+        [
+            "output_image"
+        ]
+    ]
+]

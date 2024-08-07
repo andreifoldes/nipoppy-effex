@@ -1,0 +1,30 @@
+[
+    [
+        "dimension",
+        3
+    ],
+    [
+        "first_input",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/06_get_gm/sub-126BPCP021001_ses-1_acq-mprage_T1w_corrected_labeled_maths_class-02_maths.nii.gz",
+            "9cefcc11b5a6811ceb6af827a90192ae"
+        ]
+    ],
+    [
+        "output_product_image",
+        "08_mult_gm.nii.gz"
+    ],
+    [
+        "second_input",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/07_fill_gm/sub-126BPCP021001_ses-1_acq-mprage_T1w_corrected_labeled_maths_class-02_maths_maths.nii.gz",
+            "57dfab01e9842174759f87558429f25b"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "output_product_image"
+        ]
+    ]
+]

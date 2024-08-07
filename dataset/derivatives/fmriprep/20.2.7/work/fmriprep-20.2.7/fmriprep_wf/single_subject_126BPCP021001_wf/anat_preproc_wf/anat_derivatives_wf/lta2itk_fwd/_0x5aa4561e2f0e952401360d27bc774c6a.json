@@ -1,0 +1,25 @@
+[
+    [
+        "in_xfms",
+        [
+            [
+                "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/surface_recon_wf/t1w2fsnative_xfm/out.lta",
+                "035ba7e4de3ad777e18ae59dfc9c0f29"
+            ]
+        ]
+    ],
+    [
+        "inverse",
+        false
+    ],
+    [
+        "out_fmt",
+        "itk"
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_xfm"
+        ]
+    ]
+]

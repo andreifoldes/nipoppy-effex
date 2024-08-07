@@ -1,0 +1,26 @@
+[
+    [
+        "columns",
+        [
+            "trans_x",
+            "trans_y",
+            "trans_z",
+            "rot_x",
+            "rot_y",
+            "rot_z"
+        ]
+    ],
+    [
+        "in_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/func_preproc_ses_1_task_rest_wf/bold_hmc_wf/normalize_motion/motion_params.txt",
+            "ace639f65f5d6ede1052c7f4c51d028f"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

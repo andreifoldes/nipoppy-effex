@@ -1,0 +1,33 @@
+[
+    [
+        "function_str",
+        "def _improd(op1, op2, in_mask, out_file=None):\n    import nibabel as nb\n\n    im1 = nb.load(op1)\n\n    data = im1.get_fdata(dtype=\"float32\") * nb.load(op2).get_fdata(dtype=\"float32\")\n    mskdata = nb.load(in_mask).get_fdata() > 0\n    data[~mskdata] = 0\n    data[data < 0] = 0\n    data /= data.max()\n    data = 0.5 * (data + mskdata)\n    nii = nb.Nifti1Image(data, im1.affine, im1.header)\n\n    if out_file is None:\n        from pathlib import Path\n\n        out_file = str((Path() / \"prodmap.nii.gz\").absolute())\n\n    nii.to_filename(out_file)\n    return out_file\n"
+    ],
+    [
+        "in_mask",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/thr_brainmask/tpl-OASIS30ANTs_res-01_label-brain_probseg_trans_resampled.nii.gz",
+            "7c2a883eaa527057fa54ba1d2763facc"
+        ]
+    ],
+    [
+        "op1",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/atropos_wf/copy_xform_wm/POSTERIOR_03_xform.nii.gz",
+            "9ff4758653ee92b4e7f3801ec6730cad"
+        ]
+    ],
+    [
+        "op2",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/brain_extraction_wf/map_wmmask/summap_trans.nii.gz",
+            "5646a2ba52479dc4e7815a4ed5181be5"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out"
+        ]
+    ]
+]

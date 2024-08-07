@@ -1,0 +1,31 @@
+[
+    [
+        "axis",
+        "vstack"
+    ],
+    [
+        "in1",
+        "identity"
+    ],
+    [
+        "in2",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/func_preproc_ses_1_task_rest_wf/bold_hmc_wf/fsl2itk/mat2itk.txt",
+            "dfb05b4e6c990b82f5f24908332b60b8"
+        ]
+    ],
+    [
+        "no_flatten",
+        false
+    ],
+    [
+        "ravel_inputs",
+        false
+    ],
+    [
+        "needed_outputs",
+        [
+            "out"
+        ]
+    ]
+]

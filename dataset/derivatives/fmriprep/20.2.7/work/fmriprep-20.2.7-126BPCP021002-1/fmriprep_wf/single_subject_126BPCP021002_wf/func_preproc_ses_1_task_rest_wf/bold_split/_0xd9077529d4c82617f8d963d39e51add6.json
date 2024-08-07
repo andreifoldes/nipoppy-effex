@@ -1,0 +1,23 @@
+[
+    [
+        "dimension",
+        "t"
+    ],
+    [
+        "in_file",
+        [
+            "/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021002-1/fmriprep_wf/single_subject_126BPCP021002_wf/func_preproc_ses_1_task_rest_wf/bold_stc_wf/copy_xform/sub-126BPCP021002_ses-1_task-rest_bold_tshift_xform.nii.gz",
+            "c3c3421454ef9686d6def743eacded4b"
+        ]
+    ],
+    [
+        "output_type",
+        "NIFTI_GZ"
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_files"
+        ]
+    ]
+]
