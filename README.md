@@ -18,3 +18,19 @@ This project aims to develop a script that can take any OpenNeuro repository as 
    git clone https://github.com/yourusername/nipoppy_demo.git
    cd nipoppy_demo
    ```
+
+## Roadmap
+
+```mermaid
+flowchart TD
+    A[BIDS Directory with Raw Imaging Data] --> B[fmriprep Processing]
+    B --> C{fmriprep Derivatives}
+    C -->|Resting State fMRI Data| D[Calculate RSFC for Each Subject]
+    D --> E{More than 2 Subjects with Data?}
+    E -->|Yes| F[Calculate Group-Level Statistics]
+    E -->|No| G[Skip]
+    C -->|Task-fMRI Data| H[Calculate Pairwise Condition Contrasts and Task-On vs Task-Off Contrast]
+    H --> J{More than 2 Subjects with Data?}
+    J -->|Yes| K[Calculate Group-Level One-Sample T-Test]
+    J -->|No| L[Skip]
+```
