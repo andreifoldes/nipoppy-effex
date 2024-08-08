@@ -1,2 +1,1 @@
 bids_sample/sub-126BPCP021001/ses-1/func/sub-126BPCP021001_ses-1_task-rest_bold.nii.gz filter=lfs diff=lfs merge=lfs -text
-*.nii.gz filter=lfs diff=lfs merge=lfs -text
