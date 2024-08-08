@@ -1,2 +1,3 @@
 templateflow/*
 *.nii.gz
+*.h5

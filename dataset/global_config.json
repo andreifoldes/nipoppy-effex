@@ -1,5 +1,6 @@
 {
     "DATASET_NAME": "Sample Dataset",
+    "DATASET_ROOT": "/cubric/collab/487_mvpa/poppy-effex/dataset",
     "SUBSTITUTIONS": {
         "[[NIPOPPY_DPATH_CONTAINERS]]": "/cubric/software/singularity.images",
         "[[HEUDICONV_HEURISTIC_FILE]]": "<PATH_TO_HEURISTIC_FILE>",
