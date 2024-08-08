@@ -35,7 +35,7 @@ Runtime info
 ------------
 
 
-* duration : 0.000239
+* duration : 0.000221
 * hostname : c1b9
 * prev_wd : /home/saptaf1
 * working_dir : /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/anat_preproc_wf/anat_derivatives_wf/_in_tuple_MNI152NLin2009cAsym.resnative/spacesource
@@ -50,7 +50,7 @@ Environment
 * AFNI_PLUGINPATH : /usr/lib/afni/plugins
 * AFNI_TTATLAS_DATASET : /usr/share/afni/atlases
 * ANTSPATH : /usr/lib/ants
-* ANTS_RANDOM_SEED : 22678
+* ANTS_RANDOM_SEED : 3775
 * AROMA_VERSION : 0.4.5
 * CPATH : /usr/local/miniconda/include/:
 * FIX_VERTEX_AREA : 

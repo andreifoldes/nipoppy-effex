@@ -1,1 +1,0 @@
-ImageMath 3 sub-126BPCP021001_ses-1_acq-mprage_T1w_maths.nii.gz TruncateImageIntensity /cubric/collab/487_mvpa/poppy-effex/dataset/bids/sub-126BPCP021001/ses-1/anat/sub-126BPCP021001_ses-1_acq-mprage_T1w.nii.gz 0.01 0.999 256

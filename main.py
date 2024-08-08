@@ -10,6 +10,8 @@ os.makedirs("dataset", exist_ok=True)
 
 # Define the path to the dataset root
 dataset_root_path = "/cubric/collab/487_mvpa/poppy-effex/dataset"  # Replace with the actual path 
+participant = "126BPCP021003"
+#%%
 # Define the command
 command = ["nipoppy", "init", "--dataset-root", dataset_root_path]
 # Execute the command
@@ -24,7 +26,7 @@ print("stderr:", result.stderr)
 
 # on.download(dataset='ds004965', include="sub-126BPCP021001/*(rest|T1w)*", target_dir = "bids_sample" )
 # on.download(dataset='ds004965', include="sub-126BPCP021001/*", target_dir = "dataset/bids" ) # TODO: use fancy regex to download only the necessary files
-on.download(dataset='ds004965', include="sub-126BPCP021002/*", target_dir = "dataset/bids" ) # TODO: use fancy regex to download only the necessary files
+on.download(dataset='ds004965', include=f"sub-{participant}/*", target_dir = "dataset/bids" ) # TODO: use fancy regex to download only the necessary files
 
 
 #%% Step 3: Generate a manifest file for nipoppy
@@ -62,26 +64,23 @@ df = pd.DataFrame(data)
 
 # export the dataframe to a csv file
 df.to_csv("dataset/manifest.csv", index=False)
-
-#%% Step 4: Regenerate the dataset structure
-
 # Define the command
 command = ["nipoppy", "doughnut", "--dataset-root", dataset_root_path, "--regenerate"]
-
 # Execute the command
 result = subprocess.run(command, capture_output=True, text=True, cwd="nipoppy")
-
 # Print the output
 print("stdout:", result.stdout)
 print("stderr:", result.stderr)
-#%% Step 5: build preprocessing pipeline command
+
+
+#%% Step 4: build preprocessing pipeline command
 
 # Define the command
-command = ["nipoppy", "run", "--dataset-root", dataset_root_path, "--pipeline", "fmriprep", "--pipeline-version", "20.2.7", "--participant-id", "126BPCP021002", "session-id", "1"]
+command = ["nipoppy", "run", "--dataset-root", dataset_root_path, "--pipeline", "fmriprep", "--pipeline-version", "20.2.7", "--participant-id", participant, "--session-id", "1"]
 
 # CLI command
 # nipoppy run --dataset-root /cubric/collab/487_mvpa/poppy-effex/dataset --pipeline fmriprep
-# nipoppy run --dataset-root /cubric/collab/487_mvpa/poppy-effex/dataset --pipeline fmriprep --pipeline-version 20.2.7 --participant-id 126BPCP021002
+# nipoppy run --dataset-root /cubric/collab/487_mvpa/poppy-effex/dataset --pipeline fmriprep --pipeline-version 20.2.7 --participant-id 126BPCP021001 --session-id 1
 
 # Execute the command
 result = subprocess.run(command, capture_output=True, text=True, cwd="nipoppy")

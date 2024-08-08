@@ -1,0 +1,9 @@
+{
+    "NAME": "fc-extractor",
+    "VERSION": "0.0.1",
+    "confound_strategy": "simple",
+    "metric_list": ["correlation"],
+    "brain_atlas_list": ["shen_2mm_268_parcellation"],
+    "task": "rest",
+    "space": "MNI152NLin2009cAsym"
+}

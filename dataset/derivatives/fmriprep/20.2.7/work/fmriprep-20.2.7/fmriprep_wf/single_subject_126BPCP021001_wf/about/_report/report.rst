@@ -10,7 +10,7 @@ Original Inputs
 ---------------
 
 
-* command : /usr/local/miniconda/bin/fmriprep /cubric/collab/487_mvpa/poppy-effex/dataset/bids /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output participant --skip_bids_validation --participant-label 126BPCP021001 --bids-database-dir /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7 --nprocs 8 --omp-nthreads 4 --mem 4G --anat-only -v --output-spaces MNI152NLin2009cAsym --bold2t1w-init register --bold2t1w-dof 6 --aroma-melodic-dimensionality -200 --return-all-components --fd-spike-threshold 0.5 --dvars-spike-threshold 1.5 --skull-strip-template OASIS30ANTs --skull-strip-t1w force --fs-license-file /home/saptaf1/freesurfer_license.txt --fs-subjects-dir /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1 --output-layout legacy -w /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7 --write-graph --notrack
+* command : /usr/local/miniconda/bin/fmriprep /cubric/collab/487_mvpa/poppy-effex/dataset/bids /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output participant --skip_bids_validation --participant-label 126BPCP021001 --bids-database-dir /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7 --nprocs 12 --omp-nthreads 4 --mem 180G -v --output-spaces MNI152NLin2009cAsym --bold2t1w-init register --bold2t1w-dof 6 --aroma-melodic-dimensionality -200 --return-all-components --fd-spike-threshold 0.5 --dvars-spike-threshold 1.5 --skull-strip-template OASIS30ANTs --skull-strip-t1w force --fs-license-file /home/saptaf1/freesurfer_license.txt --fs-subjects-dir /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1 --fs-no-reconall --output-layout legacy -w /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7 --write-graph --notrack
 * version : 20.2.7
 
 
@@ -18,7 +18,7 @@ Execution Inputs
 ----------------
 
 
-* command : /usr/local/miniconda/bin/fmriprep /cubric/collab/487_mvpa/poppy-effex/dataset/bids /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output participant --skip_bids_validation --participant-label 126BPCP021001 --bids-database-dir /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7 --nprocs 8 --omp-nthreads 4 --mem 4G --anat-only -v --output-spaces MNI152NLin2009cAsym --bold2t1w-init register --bold2t1w-dof 6 --aroma-melodic-dimensionality -200 --return-all-components --fd-spike-threshold 0.5 --dvars-spike-threshold 1.5 --skull-strip-template OASIS30ANTs --skull-strip-t1w force --fs-license-file /home/saptaf1/freesurfer_license.txt --fs-subjects-dir /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1 --output-layout legacy -w /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7 --write-graph --notrack
+* command : /usr/local/miniconda/bin/fmriprep /cubric/collab/487_mvpa/poppy-effex/dataset/bids /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output participant --skip_bids_validation --participant-label 126BPCP021001 --bids-database-dir /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7 --nprocs 12 --omp-nthreads 4 --mem 180G -v --output-spaces MNI152NLin2009cAsym --bold2t1w-init register --bold2t1w-dof 6 --aroma-melodic-dimensionality -200 --return-all-components --fd-spike-threshold 0.5 --dvars-spike-threshold 1.5 --skull-strip-template OASIS30ANTs --skull-strip-t1w force --fs-license-file /home/saptaf1/freesurfer_license.txt --fs-subjects-dir /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1 --fs-no-reconall --output-layout legacy -w /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7 --write-graph --notrack
 * version : 20.2.7
 
 
@@ -33,7 +33,7 @@ Runtime info
 ------------
 
 
-* duration : 0.012871
+* duration : 0.002264
 * hostname : c1b9
 * prev_wd : /home/saptaf1
 * working_dir : /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7/fmriprep_wf/single_subject_126BPCP021001_wf/about
@@ -48,7 +48,7 @@ Environment
 * AFNI_PLUGINPATH : /usr/lib/afni/plugins
 * AFNI_TTATLAS_DATASET : /usr/share/afni/atlases
 * ANTSPATH : /usr/lib/ants
-* ANTS_RANDOM_SEED : 22678
+* ANTS_RANDOM_SEED : 3775
 * AROMA_VERSION : 0.4.5
 * CPATH : /usr/local/miniconda/include/:
 * FIX_VERTEX_AREA : 

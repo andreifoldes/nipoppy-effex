@@ -17,11 +17,6 @@ Brain tissue segmentation of cerebrospinal fluid (CSF),
 white-matter (WM) and gray-matter (GM) was performed on
 the brain-extracted T1w using `fast` [FSL 5.0.9, RRID:SCR_002823,
 @fsl_fast].
-Brain surfaces were reconstructed using `recon-all` [FreeSurfer 6.0.1,
-RRID:SCR_001847, @fs_reconall], and the brain mask estimated
-previously was refined with a custom variation of the method to reconcile
-ANTs-derived and FreeSurfer-derived segmentations of the cortical
-gray-matter of Mindboggle [RRID:SCR_002438, @mindboggle].
 Volume-based spatial normalization to one standard space (MNI152NLin2009cAsym) was performed through
 nonlinear registration with `antsRegistration` (ANTs 2.3.3),
 using brain-extracted versions of both T1w reference and the T1w template.
@@ -37,8 +32,10 @@ First, a reference volume and its skull-stripped version were generated
 methodology of *fMRIPrep*.
 Susceptibility distortion correction (SDC) was omitted.
 The BOLD reference was then co-registered to the T1w reference using
-`bbregister` (FreeSurfer) which implements boundary-based registration [@bbr].
-Co-registration was configured with six degrees of freedom.
+`flirt` [FSL 5.0.9, @flirt] with the boundary-based registration [@bbr]
+cost-function.
+Co-registration was configured with nine degrees of freedom to account
+for distortions remaining in the BOLD reference.
 Head-motion parameters with respect to the BOLD reference
 (transformation matrices, and six corresponding rotation and translation
 parameters) are estimated before any spatiotemporal filtering using
@@ -78,7 +75,7 @@ are generated in anatomical space.
 The implementation differs from that of Behzadi et al. in that instead
 of eroding the masks by 2 pixels on BOLD space, the aCompCor masks are
 subtracted a mask of pixels that likely contain a volume fraction of GM.
-This mask is obtained by dilating a GM mask extracted from the FreeSurfer's *aseg* segmentation, and it ensures components are not extracted
+This mask is obtained by thresholding the corresponding partial volume map at 0.05, and it ensures components are not extracted
 from voxels containing a minimal fraction of GM.
 Finally, these masks are resampled into BOLD space and binarized by
 thresholding at 0.99 (as in the original implementation).

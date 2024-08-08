@@ -1,0 +1,8 @@
+[2024-08-07 21:43:17] INFO    Writing the log to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/logs/doughnut/doughnut-20240807_2143.log
+[2024-08-07 21:43:17] INFO    ========== BEGIN DOUGHNUT WORKFLOW ==========
+[2024-08-07 21:43:17] INFO    DoughnutWorkflow(dpath_root=/cubric/collab/487_mvpa/poppy-effex/dataset, empty=False, regenerate=True, fpath_layout=None, logger=<Logger doughnut (INFO)>, dry_run=False)
+[2024-08-07 21:43:17] INFO    Regenerating the entire doughnut
+[2024-08-07 21:43:17] INFO    Loading config from /cubric/collab/487_mvpa/poppy-effex/dataset/global_config.json
+[2024-08-07 21:43:18] INFO    New/updated doughnut shape: (3, 8)
+[2024-08-07 21:43:18] INFO    Saved to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/raw_imaging/doughnut.csv (-> /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/raw_imaging/.doughnuts/doughnut-20240807_2143.csv)
+[2024-08-07 21:43:18] INFO    ========== END DOUGHNUT WORKFLOW ==========

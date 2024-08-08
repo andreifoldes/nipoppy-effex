@@ -1,1 +1,0 @@
-bet ref_bold_corrected.nii.gz ref_bold_corrected_brain.nii.gz -f 0.20 -m

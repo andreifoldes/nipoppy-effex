@@ -1,0 +1,9 @@
+{
+  "AcquisitionDuration": 601.287,
+  "DelayTime": 0.10999999999999988,
+  "RepetitionTime": 1.4,
+  "SkullStripped": false,
+  "SliceTimingCorrected": true,
+  "StartTime": 0.645,
+  "TaskName": "rest"
+}

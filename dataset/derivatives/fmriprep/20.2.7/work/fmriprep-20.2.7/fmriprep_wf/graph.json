@@ -2,1210 +2,2284 @@
     {
         "group": 1,
         "imports": [],
-        "name": "000_spacesource",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "000_spacesource"
-        ],
-        "name": "001_select_tpl",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "000_spacesource"
-        ],
-        "name": "002_gen_tplid",
+        "name": "000_select_tpl",
         "size": 1
     },
     {
         "group": 1,
         "imports": [],
-        "name": "003_tf_select",
+        "name": "001_split_target",
         "size": 1
     },
     {
         "group": 1,
         "imports": [],
-        "name": "004_split_desc",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "004_split_desc"
-        ],
-        "name": "005_tf_select",
+        "name": "002_spacesource",
         "size": 1
     },
     {
         "group": 1,
         "imports": [],
-        "name": "006_lap_tmpl",
+        "name": "003_spacesource",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "006_lap_tmpl"
+            "003_spacesource"
         ],
-        "name": "007_mrg_tmpl",
+        "name": "004_select_tpl",
         "size": 1
     },
     {
         "group": 1,
-        "imports": [],
-        "name": "008_full_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [],
-        "name": "009_res_tmpl",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [],
-        "name": "010_about",
+        "imports": [
+            "003_spacesource"
+        ],
+        "name": "005_gen_tplid",
         "size": 1
     },
     {
         "group": 1,
         "imports": [],
-        "name": "011_bidssrc",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "011_bidssrc"
-        ],
-        "name": "012_t1w_ref_dimensions",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "012_t1w_ref_dimensions"
-        ],
-        "name": "013_t1w_conform_check",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "013_t1w_conform_check",
-            "011_bidssrc"
-        ],
-        "name": "014_ds_t1w_conform_report",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "012_t1w_ref_dimensions"
-        ],
-        "name": "015_raw_sources",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "012_t1w_ref_dimensions"
-        ],
-        "name": "016_t1w_conform",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "016_t1w_conform"
-        ],
-        "name": "017_get1st",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "017_get1st"
-        ],
-        "name": "018_anat_validate",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "018_anat_validate"
-        ],
-        "name": "019_fov_check",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "018_anat_validate",
-            "011_bidssrc"
-        ],
-        "name": "020_recon_config",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "018_anat_validate"
-        ],
-        "name": "021_truncate_images",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "021_truncate_images"
-        ],
-        "name": "022_inu_n4",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "022_inu_n4"
-        ],
-        "name": "023_lap_target",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "022_inu_n4",
-            "023_lap_target"
-        ],
-        "name": "024_mrg_target",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "022_inu_n4"
-        ],
-        "name": "025_res_target",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "025_res_target",
-            "009_res_tmpl"
-        ],
-        "name": "026_init_aff",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "026_init_aff",
-            "007_mrg_tmpl",
-            "024_mrg_target"
-        ],
-        "name": "027_norm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "027_norm",
-            "008_full_wm",
-            "018_anat_validate"
-        ],
-        "name": "028_map_wmmask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "028_map_wmmask",
-            "018_anat_validate"
-        ],
-        "name": "029_inu_n4_final",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "027_norm",
-            "018_anat_validate"
-        ],
-        "name": "030_map_brainmask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "030_map_brainmask"
-        ],
-        "name": "031_thr_brainmask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "031_thr_brainmask"
-        ],
-        "name": "032_03_pad_mask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "031_thr_brainmask"
-        ],
-        "name": "033_dil_brainmask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "033_dil_brainmask"
-        ],
-        "name": "034_get_brainmask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "034_get_brainmask",
-            "029_inu_n4_final"
-        ],
-        "name": "035_01_atropos",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "035_01_atropos",
-            "028_map_wmmask"
-        ],
-        "name": "036_match_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "035_01_atropos",
-            "036_match_wm"
-        ],
-        "name": "037_overlap",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "035_01_atropos",
-            "037_overlap"
-        ],
-        "name": "038_sel_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "038_sel_wm",
-            "018_anat_validate"
-        ],
-        "name": "039_copy_xform_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "039_copy_xform_wm",
-            "031_thr_brainmask",
-            "028_map_wmmask"
-        ],
-        "name": "040_apply_wm_prior",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "040_apply_wm_prior",
-            "018_anat_validate"
-        ],
-        "name": "041_inu_n4_final",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "035_01_atropos"
-        ],
-        "name": "042_02_pad_segm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "042_02_pad_segm"
-        ],
-        "name": "043_04_sel_labels",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "043_04_sel_labels"
-        ],
-        "name": "044_27_depad_csf",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "043_04_sel_labels"
-        ],
-        "name": "045_10_me_csf",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "043_04_sel_labels"
-        ],
-        "name": "046_06_get_gm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "046_06_get_gm"
-        ],
-        "name": "047_07_fill_gm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "046_06_get_gm",
-            "047_07_fill_gm"
-        ],
-        "name": "048_08_mult_gm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "048_08_mult_gm",
-            "045_10_me_csf"
-        ],
-        "name": "049_11_add_gm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "049_11_add_gm"
-        ],
-        "name": "050_12_relabel_gm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "050_12_relabel_gm"
-        ],
-        "name": "051_25_depad_gm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "043_04_sel_labels"
-        ],
-        "name": "052_05_get_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "052_05_get_wm"
-        ],
-        "name": "053_09_relabel_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "053_09_relabel_wm"
-        ],
-        "name": "054_26_depad_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "054_26_depad_wm",
-            "051_25_depad_gm",
-            "044_27_depad_csf"
-        ],
-        "name": "055_merge_tpms",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "053_09_relabel_wm",
-            "050_12_relabel_gm"
-        ],
-        "name": "056_13_add_gm_wm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "056_13_add_gm_wm"
-        ],
-        "name": "057_24_depad_segm",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "056_13_add_gm_wm"
-        ],
-        "name": "058_14_sel_labels2",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "058_14_sel_labels2"
-        ],
-        "name": "059_15_add_7",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "059_15_add_7"
-        ],
-        "name": "060_16_me_7",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "060_16_me_7"
-        ],
-        "name": "061_17_comp_7",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "061_17_comp_7"
-        ],
-        "name": "062_18_md_7",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "062_18_md_7"
-        ],
-        "name": "063_19_fill_7",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "032_03_pad_mask",
-            "063_19_fill_7"
-        ],
-        "name": "064_20_add_7_2",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "064_20_add_7_2"
-        ],
-        "name": "065_21_md_7_2",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "065_21_md_7_2"
-        ],
-        "name": "066_22_me_7_2",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "066_22_me_7_2"
-        ],
-        "name": "067_23_depad_mask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "067_23_depad_mask",
-            "018_anat_validate"
-        ],
-        "name": "068_msk_conform",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "041_inu_n4_final",
-            "068_msk_conform",
-            "057_24_depad_segm",
-            "055_merge_tpms",
-            "018_anat_validate"
-        ],
-        "name": "069_copy_xform",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "069_copy_xform"
-        ],
-        "name": "070_trunc_mov",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "001_select_tpl",
-            "000_spacesource",
-            "069_copy_xform"
-        ],
-        "name": "071_gen_ref",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "012_t1w_ref_dimensions",
-            "069_copy_xform"
-        ],
-        "name": "072_ds_t1w_preproc",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "069_copy_xform"
-        ],
-        "name": "073_apply_mask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "029_inu_n4_final",
-            "031_thr_brainmask"
-        ],
-        "name": "074_apply_mask",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "011_bidssrc",
-            "010_about"
-        ],
-        "name": "075_ds_report_about",
-        "size": 1
-    },
-    {
-        "group": 1,
-        "imports": [
-            "011_bidssrc"
-        ],
-        "name": "076_bids_info",
+        "name": "006_tf_select",
         "size": 1
     },
     {
         "group": 1,
         "imports": [],
-        "name": "077_fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2",
+        "name": "007_split_desc",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "077_fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2",
-            "076_bids_info"
+            "007_split_desc"
         ],
-        "name": "078_fs_isrunning",
+        "name": "008_tf_select",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "009_val_bold",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "020_recon_config",
-            "019_fov_check",
-            "018_anat_validate",
-            "078_fs_isrunning",
-            "076_bids_info"
+            "009_val_bold"
         ],
-        "name": "079_autorecon1",
+        "name": "010_validate_1st",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "079_autorecon1",
-            "018_anat_validate"
+            "010_validate_1st"
         ],
-        "name": "080_fsnative2t1w_xfm",
+        "name": "011_ds_report_validation",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "080_fsnative2t1w_xfm"
+            "009_val_bold"
         ],
-        "name": "081_lta2itk_inv",
+        "name": "012_bold_1st",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "081_lta2itk_inv",
-            "012_t1w_ref_dimensions"
+            "009_val_bold"
         ],
-        "name": "082_ds_fsnative_t1w",
+        "name": "013_gen_ref",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "080_fsnative2t1w_xfm"
+            "013_gen_ref",
+            "012_bold_1st"
         ],
-        "name": "083_t1w2fsnative_xfm",
+        "name": "014_mcflirt",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "083_t1w2fsnative_xfm"
+            "014_mcflirt"
         ],
-        "name": "084_lta2itk_fwd",
+        "name": "015_add_rmsd_header",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "084_lta2itk_fwd",
-            "012_t1w_ref_dimensions"
+            "014_mcflirt"
         ],
-        "name": "085_ds_t1w_fsnative",
+        "name": "016_normalize_motion",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "079_autorecon1",
-            "073_apply_mask"
+            "016_normalize_motion"
         ],
-        "name": "086_skull_strip_extern",
+        "name": "017_add_motion_headers",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "086_skull_strip_extern"
+            "016_normalize_motion"
         ],
-        "name": "087_autorecon2_vol",
+        "name": "018_fdisp",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "087_autorecon2_vol"
+            "014_mcflirt",
+            "013_gen_ref"
         ],
-        "name": "088_autorecon_surfs",
+        "name": "019_fsl2itk",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "088_autorecon_surfs",
-            "020_recon_config"
+            "019_fsl2itk"
         ],
-        "name": "089_cortribbon",
+        "name": "020_merge_xforms",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "089_cortribbon"
+            "013_gen_ref"
         ],
-        "name": "090_parcstats",
+        "name": "021_init_aff",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "090_parcstats"
+            "021_init_aff",
+            "013_gen_ref"
         ],
-        "name": "091_autorecon3",
+        "name": "022_norm",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "091_autorecon3"
+            "022_norm",
+            "013_gen_ref"
         ],
-        "name": "092_recon_report",
+        "name": "023_map_brainmask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "092_recon_report",
-            "011_bidssrc"
+            "023_map_brainmask"
         ],
-        "name": "093_ds_recon_report",
+        "name": "024_binarize_mask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "091_autorecon3"
+            "024_binarize_mask"
         ],
-        "name": "094_get_surfaces",
+        "name": "025_pre_mask_dilate",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "094_get_surfaces"
+            "025_pre_mask_dilate",
+            "013_gen_ref"
         ],
-        "name": "095_midthickness",
+        "name": "026_check_hdr",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "095_midthickness",
-            "091_autorecon3"
+            "026_check_hdr",
+            "013_gen_ref"
         ],
-        "name": "096_save_midthickness",
+        "name": "027_n4_correct",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "094_get_surfaces",
-            "096_save_midthickness"
+            "027_n4_correct"
         ],
-        "name": "097_surface_list",
+        "name": "028_skullstrip_first_pass",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "097_surface_list"
+            "028_skullstrip_first_pass"
         ],
-        "name": "098_fs2gii",
+        "name": "029_skullstrip_first_dilate",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "098_fs2gii",
-            "080_fsnative2t1w_xfm"
+            "028_skullstrip_first_pass",
+            "029_skullstrip_first_dilate"
         ],
-        "name": "099_fix_surfs",
+        "name": "030_skullstrip_first_mask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "099_fix_surfs"
+            "030_skullstrip_first_mask"
         ],
-        "name": "100_name_surfs",
+        "name": "031_unifize",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "100_name_surfs",
-            "012_t1w_ref_dimensions",
-            "099_fix_surfs"
+            "031_unifize",
+            "013_gen_ref"
         ],
-        "name": "101_ds_surfs",
+        "name": "032_fixhdr_unifize",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "091_autorecon3"
+            "032_fixhdr_unifize"
         ],
-        "name": "102_fs_datasource",
+        "name": "033_skullstrip_second_pass",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "102_fs_datasource",
-            "069_copy_xform",
-            "080_fsnative2t1w_xfm"
+            "033_skullstrip_second_pass",
+            "013_gen_ref"
         ],
-        "name": "103_resample",
+        "name": "034_fixhdr_skullstrip2",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "012_t1w_ref_dimensions",
-            "103_resample"
+            "034_fixhdr_skullstrip2",
+            "028_skullstrip_first_pass"
         ],
-        "name": "104_ds_t1w_fsaseg",
+        "name": "035_combine_masks",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "069_copy_xform",
-            "103_resample"
+            "032_fixhdr_unifize",
+            "035_combine_masks"
         ],
-        "name": "105_refine",
+        "name": "036_apply_mask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "070_trunc_mov",
-            "004_split_desc",
-            "105_refine",
-            "011_bidssrc"
+            "013_gen_ref"
         ],
-        "name": "106_registration",
+        "name": "037_calc_dummy_scans",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "005_tf_select",
-            "106_registration",
-            "105_refine"
+            "012_bold_1st",
+            "037_calc_dummy_scans"
         ],
-        "name": "107_std_mask",
+        "name": "038_slice_timing_correction",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "005_tf_select",
-            "106_registration",
-            "069_copy_xform"
+            "038_slice_timing_correction",
+            "012_bold_1st"
         ],
-        "name": "108_tpl_moving",
+        "name": "039_copy_xform",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "108_tpl_moving",
-            "107_std_mask",
-            "003_tf_select"
+            "039_copy_xform"
         ],
-        "name": "109_norm_msk",
+        "name": "040_bold_split",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "109_norm_msk"
+            "001_split_target",
+            "000_select_tpl",
+            "040_bold_split"
         ],
-        "name": "110_norm_rpt",
+        "name": "041_gen_ref",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "110_norm_rpt",
-            "011_bidssrc"
+            "020_merge_xforms",
+            "040_bold_split"
         ],
-        "name": "111_ds_std_t1w_report",
+        "name": "042_bold_transform",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "015_raw_sources",
-            "012_t1w_ref_dimensions",
-            "105_refine"
+            "042_bold_transform"
         ],
-        "name": "112_ds_t1w_mask",
+        "name": "043_merge",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "069_copy_xform",
-            "105_refine"
+            "043_merge"
         ],
-        "name": "113_applyrefined",
+        "name": "044_val_bold",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "113_applyrefined"
+            "044_val_bold"
         ],
-        "name": "114_t1w_dseg",
+        "name": "045_validate_1st",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "114_t1w_dseg"
+            "044_val_bold"
         ],
-        "name": "115_fast2bids",
+        "name": "046_bold_1st",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "005_tf_select",
-            "106_registration",
-            "115_fast2bids"
+            "044_val_bold"
         ],
-        "name": "116_std_tpms",
+        "name": "047_gen_ref",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "012_t1w_ref_dimensions",
-            "115_fast2bids"
+            "047_gen_ref"
         ],
-        "name": "117_ds_t1w_tpms",
+        "name": "048_init_aff",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "114_t1w_dseg"
+            "048_init_aff",
+            "047_gen_ref"
         ],
-        "name": "118_lut_t1w_dseg",
+        "name": "049_norm",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "005_tf_select",
-            "106_registration",
-            "118_lut_t1w_dseg"
+            "049_norm",
+            "047_gen_ref"
         ],
-        "name": "119_std_dseg",
+        "name": "050_map_brainmask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "108_tpl_moving",
-            "119_std_dseg",
-            "107_std_mask",
-            "106_registration",
-            "004_split_desc",
-            "116_std_tpms"
+            "050_map_brainmask"
         ],
-        "name": "120_outputnode",
+        "name": "051_binarize_mask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "002_gen_tplid",
-            "120_outputnode"
+            "051_binarize_mask"
         ],
-        "name": "121_select_xfm",
+        "name": "052_pre_mask_dilate",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "071_gen_ref",
-            "121_select_xfm",
-            "115_fast2bids"
+            "052_pre_mask_dilate",
+            "047_gen_ref"
         ],
-        "name": "122_anat2std_tpms",
+        "name": "053_check_hdr",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "000_spacesource",
-            "122_anat2std_tpms",
-            "012_t1w_ref_dimensions"
+            "053_check_hdr",
+            "047_gen_ref"
         ],
-        "name": "123_ds_std_tpms",
+        "name": "054_n4_correct",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "071_gen_ref",
-            "121_select_xfm",
-            "118_lut_t1w_dseg"
+            "054_n4_correct"
         ],
-        "name": "124_anat2std_dseg",
+        "name": "055_skullstrip_first_pass",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "000_spacesource",
-            "124_anat2std_dseg",
-            "012_t1w_ref_dimensions"
+            "055_skullstrip_first_pass"
         ],
-        "name": "125_ds_std_dseg",
+        "name": "056_skullstrip_first_dilate",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "071_gen_ref",
-            "121_select_xfm",
-            "105_refine"
+            "055_skullstrip_first_pass",
+            "056_skullstrip_first_dilate"
         ],
-        "name": "126_anat2std_mask",
+        "name": "057_skullstrip_first_mask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "126_anat2std_mask",
-            "001_select_tpl",
-            "000_spacesource",
-            "012_t1w_ref_dimensions"
+            "057_skullstrip_first_mask"
         ],
-        "name": "127_ds_std_mask",
+        "name": "058_unifize",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "071_gen_ref",
-            "121_select_xfm",
-            "069_copy_xform"
+            "058_unifize",
+            "047_gen_ref"
         ],
-        "name": "128_anat2std_t1w",
+        "name": "059_fixhdr_unifize",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "000_spacesource",
-            "128_anat2std_t1w",
-            "012_t1w_ref_dimensions"
+            "059_fixhdr_unifize"
         ],
-        "name": "129_ds_std_t1w",
+        "name": "060_skullstrip_second_pass",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "012_t1w_ref_dimensions",
-            "120_outputnode"
+            "060_skullstrip_second_pass",
+            "047_gen_ref"
         ],
-        "name": "130_ds_std2t1w_xfm",
+        "name": "061_fixhdr_skullstrip2",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "012_t1w_ref_dimensions",
-            "120_outputnode"
+            "061_fixhdr_skullstrip2",
+            "055_skullstrip_first_pass"
         ],
-        "name": "131_ds_t1w2std_xfm",
+        "name": "062_combine_masks",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "069_copy_xform",
-            "105_refine",
-            "118_lut_t1w_dseg"
+            "043_merge",
+            "062_combine_masks",
+            "037_calc_dummy_scans"
         ],
-        "name": "132_seg_rpt",
+        "name": "063_tcompcor",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "132_seg_rpt",
-            "011_bidssrc"
+            "063_tcompcor"
         ],
-        "name": "133_ds_t1w_dseg_mask_report",
+        "name": "064_tcc_metadata_fmt",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "012_t1w_ref_dimensions",
-            "118_lut_t1w_dseg"
+            "043_merge",
+            "062_combine_masks"
         ],
-        "name": "134_ds_t1w_dseg",
+        "name": "065_dvars",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "091_autorecon3"
+            "065_dvars"
         ],
-        "name": "135_fs_datasource",
+        "name": "066_add_std_dvars_header",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "135_fs_datasource",
-            "069_copy_xform",
-            "080_fsnative2t1w_xfm"
+            "065_dvars"
         ],
-        "name": "136_resample",
+        "name": "067_add_dvars_header",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "012_t1w_ref_dimensions",
-            "136_resample"
+            "059_fixhdr_unifize",
+            "062_combine_masks"
         ],
-        "name": "137_ds_t1w_fsparc",
+        "name": "068_apply_mask",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "011_bidssrc",
-            "076_bids_info",
-            "077_fsdir_run_20240807_115714_b1f9b98d_fe8a_49f6_a60c_fb87592abfd2"
+            "047_gen_ref"
         ],
-        "name": "138_summary",
+        "name": "069_calc_dummy_scans",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "070_raw_sources",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "071_lap_tmpl",
         "size": 1
     },
     {
         "group": 1,
         "imports": [
-            "138_summary",
-            "011_bidssrc"
+            "071_lap_tmpl"
         ],
-        "name": "139_ds_report_summary",
+        "name": "072_mrg_tmpl",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "073_full_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "074_res_tmpl",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "075_about",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "076_bidssrc",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "076_bidssrc"
+        ],
+        "name": "077_t1w_ref_dimensions",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "078_t1w_conform_check",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "078_t1w_conform_check",
+            "076_bidssrc"
+        ],
+        "name": "079_ds_t1w_conform_report",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "080_raw_sources",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "081_t1w_conform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "081_t1w_conform"
+        ],
+        "name": "082_get1st",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "082_get1st"
+        ],
+        "name": "083_anat_validate",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "083_anat_validate"
+        ],
+        "name": "084_truncate_images",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "084_truncate_images"
+        ],
+        "name": "085_inu_n4",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "085_inu_n4"
+        ],
+        "name": "086_lap_target",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "085_inu_n4",
+            "086_lap_target"
+        ],
+        "name": "087_mrg_target",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "085_inu_n4"
+        ],
+        "name": "088_res_target",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "088_res_target",
+            "074_res_tmpl"
+        ],
+        "name": "089_init_aff",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "089_init_aff",
+            "072_mrg_tmpl",
+            "087_mrg_target"
+        ],
+        "name": "090_norm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "090_norm",
+            "073_full_wm",
+            "083_anat_validate"
+        ],
+        "name": "091_map_wmmask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "091_map_wmmask",
+            "083_anat_validate"
+        ],
+        "name": "092_inu_n4_final",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "090_norm",
+            "083_anat_validate"
+        ],
+        "name": "093_map_brainmask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "093_map_brainmask"
+        ],
+        "name": "094_thr_brainmask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "094_thr_brainmask"
+        ],
+        "name": "095_03_pad_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "094_thr_brainmask"
+        ],
+        "name": "096_dil_brainmask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "096_dil_brainmask"
+        ],
+        "name": "097_get_brainmask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "097_get_brainmask",
+            "092_inu_n4_final"
+        ],
+        "name": "098_01_atropos",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "098_01_atropos",
+            "091_map_wmmask"
+        ],
+        "name": "099_match_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "098_01_atropos",
+            "099_match_wm"
+        ],
+        "name": "100_overlap",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "098_01_atropos",
+            "100_overlap"
+        ],
+        "name": "101_sel_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "101_sel_wm",
+            "083_anat_validate"
+        ],
+        "name": "102_copy_xform_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "102_copy_xform_wm",
+            "094_thr_brainmask",
+            "091_map_wmmask"
+        ],
+        "name": "103_apply_wm_prior",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "103_apply_wm_prior",
+            "083_anat_validate"
+        ],
+        "name": "104_inu_n4_final",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "098_01_atropos"
+        ],
+        "name": "105_02_pad_segm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "105_02_pad_segm"
+        ],
+        "name": "106_04_sel_labels",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "106_04_sel_labels"
+        ],
+        "name": "107_27_depad_csf",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "106_04_sel_labels"
+        ],
+        "name": "108_10_me_csf",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "106_04_sel_labels"
+        ],
+        "name": "109_06_get_gm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "109_06_get_gm"
+        ],
+        "name": "110_07_fill_gm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "109_06_get_gm",
+            "110_07_fill_gm"
+        ],
+        "name": "111_08_mult_gm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "111_08_mult_gm",
+            "108_10_me_csf"
+        ],
+        "name": "112_11_add_gm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "112_11_add_gm"
+        ],
+        "name": "113_12_relabel_gm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "113_12_relabel_gm"
+        ],
+        "name": "114_25_depad_gm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "106_04_sel_labels"
+        ],
+        "name": "115_05_get_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "115_05_get_wm"
+        ],
+        "name": "116_09_relabel_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "116_09_relabel_wm"
+        ],
+        "name": "117_26_depad_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "117_26_depad_wm",
+            "114_25_depad_gm",
+            "107_27_depad_csf"
+        ],
+        "name": "118_merge_tpms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "116_09_relabel_wm",
+            "113_12_relabel_gm"
+        ],
+        "name": "119_13_add_gm_wm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "119_13_add_gm_wm"
+        ],
+        "name": "120_24_depad_segm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "119_13_add_gm_wm"
+        ],
+        "name": "121_14_sel_labels2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "121_14_sel_labels2"
+        ],
+        "name": "122_15_add_7",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "122_15_add_7"
+        ],
+        "name": "123_16_me_7",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "123_16_me_7"
+        ],
+        "name": "124_17_comp_7",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "124_17_comp_7"
+        ],
+        "name": "125_18_md_7",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "125_18_md_7"
+        ],
+        "name": "126_19_fill_7",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "095_03_pad_mask",
+            "126_19_fill_7"
+        ],
+        "name": "127_20_add_7_2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "127_20_add_7_2"
+        ],
+        "name": "128_21_md_7_2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "128_21_md_7_2"
+        ],
+        "name": "129_22_me_7_2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "129_22_me_7_2"
+        ],
+        "name": "130_23_depad_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "130_23_depad_mask",
+            "083_anat_validate"
+        ],
+        "name": "131_msk_conform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "104_inu_n4_final",
+            "131_msk_conform",
+            "120_24_depad_segm",
+            "118_merge_tpms",
+            "083_anat_validate"
+        ],
+        "name": "132_copy_xform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "132_copy_xform"
+        ],
+        "name": "133_trunc_mov",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "133_trunc_mov",
+            "007_split_desc",
+            "132_copy_xform",
+            "076_bidssrc"
+        ],
+        "name": "134_registration",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "134_registration",
+            "008_tf_select",
+            "132_copy_xform"
+        ],
+        "name": "135_std_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "134_registration",
+            "008_tf_select",
+            "132_copy_xform"
+        ],
+        "name": "136_tpl_moving",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "135_std_mask",
+            "006_tf_select",
+            "136_tpl_moving"
+        ],
+        "name": "137_norm_msk",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "137_norm_msk"
+        ],
+        "name": "138_norm_rpt",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "138_norm_rpt",
+            "076_bidssrc"
+        ],
+        "name": "139_ds_std_t1w_report",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "004_select_tpl",
+            "003_spacesource",
+            "132_copy_xform"
+        ],
+        "name": "140_gen_ref",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "080_raw_sources",
+            "077_t1w_ref_dimensions",
+            "132_copy_xform"
+        ],
+        "name": "141_ds_t1w_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions",
+            "132_copy_xform"
+        ],
+        "name": "142_ds_t1w_preproc",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "132_copy_xform"
+        ],
+        "name": "143_t1w_brain",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "036_apply_mask",
+            "143_t1w_brain",
+            "132_copy_xform"
+        ],
+        "name": "144_gen_ref",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "036_apply_mask",
+            "143_t1w_brain"
+        ],
+        "name": "145_flt_bbr_init",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "132_copy_xform"
+        ],
+        "name": "146_apply_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "146_apply_mask"
+        ],
+        "name": "147_t1w_dseg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "147_t1w_dseg"
+        ],
+        "name": "148_fast2bids",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "134_registration",
+            "008_tf_select",
+            "148_fast2bids"
+        ],
+        "name": "149_std_tpms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions",
+            "148_fast2bids"
+        ],
+        "name": "150_ds_t1w_tpms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "043_merge",
+            "148_fast2bids"
+        ],
+        "name": "151_acc_masks",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "147_t1w_dseg"
+        ],
+        "name": "152_lut_t1w_dseg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "134_registration",
+            "008_tf_select",
+            "152_lut_t1w_dseg"
+        ],
+        "name": "153_std_dseg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "149_std_tpms",
+            "135_std_mask",
+            "153_std_dseg",
+            "134_registration",
+            "007_split_desc",
+            "136_tpl_moving"
+        ],
+        "name": "154_outputnode",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "001_split_target",
+            "154_outputnode"
+        ],
+        "name": "155_select_std",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "005_gen_tplid",
+            "154_outputnode"
+        ],
+        "name": "156_select_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "140_gen_ref",
+            "156_select_xfm",
+            "148_fast2bids"
+        ],
+        "name": "157_anat2std_tpms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "003_spacesource",
+            "157_anat2std_tpms",
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "158_ds_std_tpms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "140_gen_ref",
+            "156_select_xfm",
+            "152_lut_t1w_dseg"
+        ],
+        "name": "159_anat2std_dseg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "003_spacesource",
+            "159_anat2std_dseg",
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "160_ds_std_dseg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "140_gen_ref",
+            "156_select_xfm",
+            "132_copy_xform"
+        ],
+        "name": "161_anat2std_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "004_select_tpl",
+            "003_spacesource",
+            "161_anat2std_mask",
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "162_ds_std_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "140_gen_ref",
+            "156_select_xfm",
+            "132_copy_xform"
+        ],
+        "name": "163_anat2std_t1w",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "003_spacesource",
+            "163_anat2std_t1w",
+            "077_t1w_ref_dimensions"
+        ],
+        "name": "164_ds_std_t1w",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions",
+            "154_outputnode"
+        ],
+        "name": "165_ds_std2t1w_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions",
+            "154_outputnode"
+        ],
+        "name": "166_ds_t1w2std_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "154_outputnode"
+        ],
+        "name": "167_carpetplot_select_std",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "132_copy_xform",
+            "152_lut_t1w_dseg"
+        ],
+        "name": "168_seg_rpt",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "168_seg_rpt",
+            "076_bidssrc"
+        ],
+        "name": "169_ds_t1w_dseg_mask_report",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "077_t1w_ref_dimensions",
+            "152_lut_t1w_dseg"
+        ],
+        "name": "170_ds_t1w_dseg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "152_lut_t1w_dseg"
+        ],
+        "name": "171_wm_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "145_flt_bbr_init",
+            "171_wm_mask",
+            "036_apply_mask",
+            "143_t1w_brain"
+        ],
+        "name": "172_flt_bbr",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "145_flt_bbr_init",
+            "172_flt_bbr"
+        ],
+        "name": "173_reports",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "145_flt_bbr_init",
+            "172_flt_bbr"
+        ],
+        "name": "174_transforms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "174_transforms",
+            "036_apply_mask",
+            "143_t1w_brain"
+        ],
+        "name": "175_fsl_to_lta",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "175_fsl_to_lta"
+        ],
+        "name": "176_compare_transforms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "176_compare_transforms",
+            "173_reports"
+        ],
+        "name": "177_select_report",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "176_compare_transforms",
+            "177_select_report"
+        ],
+        "name": "178_ds_report_reg",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "174_transforms",
+            "176_compare_transforms"
+        ],
+        "name": "179_select_transform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "179_select_transform",
+            "036_apply_mask",
+            "143_t1w_brain"
+        ],
+        "name": "180_fsl2itk_fwd",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "155_select_std",
+            "180_fsl2itk_fwd"
+        ],
+        "name": "181_mask_merge_tfms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "181_mask_merge_tfms",
+            "041_gen_ref",
+            "062_combine_masks"
+        ],
+        "name": "182_mask_std_tfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "182_mask_std_tfm"
+        ],
+        "name": "183_pre_mask_dilate",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "155_select_std",
+            "019_fsl2itk",
+            "180_fsl2itk_fwd"
+        ],
+        "name": "184_merge_xforms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "184_merge_xforms",
+            "041_gen_ref",
+            "040_bold_split"
+        ],
+        "name": "185_bold_to_std_transform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "185_bold_to_std_transform"
+        ],
+        "name": "186_merge",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "186_merge"
+        ],
+        "name": "187_val_bold",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "187_val_bold"
+        ],
+        "name": "188_validate_1st",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "187_val_bold"
+        ],
+        "name": "189_bold_1st",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "187_val_bold"
+        ],
+        "name": "190_gen_ref",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "190_gen_ref",
+            "183_pre_mask_dilate"
+        ],
+        "name": "191_check_hdr",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "190_gen_ref",
+            "191_check_hdr"
+        ],
+        "name": "192_n4_correct",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "186_merge",
+            "155_select_std",
+            "192_n4_correct",
+            "182_mask_std_tfm"
+        ],
+        "name": "193_outputnode",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "002_spacesource",
+            "193_outputnode"
+        ],
+        "name": "194_select_std",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "194_select_std",
+            "002_spacesource",
+            "070_raw_sources"
+        ],
+        "name": "195_ds_bold_mask_std",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "194_select_std",
+            "002_spacesource"
+        ],
+        "name": "196_ds_bold_std_ref",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "194_select_std",
+            "002_spacesource"
+        ],
+        "name": "197_ds_bold_std",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "192_n4_correct"
+        ],
+        "name": "198_skullstrip_first_pass",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "198_skullstrip_first_pass"
+        ],
+        "name": "199_skullstrip_first_dilate",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "198_skullstrip_first_pass",
+            "199_skullstrip_first_dilate"
+        ],
+        "name": "200_skullstrip_first_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "200_skullstrip_first_mask"
+        ],
+        "name": "201_unifize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "190_gen_ref",
+            "201_unifize"
+        ],
+        "name": "202_fixhdr_unifize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "202_fixhdr_unifize"
+        ],
+        "name": "203_skullstrip_second_pass",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "190_gen_ref",
+            "203_skullstrip_second_pass"
+        ],
+        "name": "204_fixhdr_skullstrip2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "204_fixhdr_skullstrip2",
+            "198_skullstrip_first_pass"
+        ],
+        "name": "205_combine_masks",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "205_combine_masks",
+            "202_fixhdr_unifize"
+        ],
+        "name": "206_apply_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "190_gen_ref"
+        ],
+        "name": "207_calc_dummy_scans",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "180_fsl2itk_fwd"
+        ],
+        "name": "208_ds_ref_t1w_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "180_fsl2itk_fwd",
+            "019_fsl2itk"
+        ],
+        "name": "209_merge_xforms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "144_gen_ref",
+            "209_merge_xforms",
+            "040_bold_split"
+        ],
+        "name": "210_bold_to_t1w_transform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "210_bold_to_t1w_transform"
+        ],
+        "name": "211_merge",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "211_merge"
+        ],
+        "name": "212_val_bold",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "212_val_bold"
+        ],
+        "name": "213_validate_1st",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "212_val_bold"
+        ],
+        "name": "214_bold_1st",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "212_val_bold"
+        ],
+        "name": "215_gen_ref",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "215_gen_ref"
+        ],
+        "name": "216_calc_dummy_scans",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "144_gen_ref",
+            "035_combine_masks",
+            "180_fsl2itk_fwd"
+        ],
+        "name": "217_mask_t1w_tfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "217_mask_t1w_tfm"
+        ],
+        "name": "218_pre_mask_dilate",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "218_pre_mask_dilate",
+            "215_gen_ref"
+        ],
+        "name": "219_check_hdr",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "219_check_hdr",
+            "215_gen_ref"
+        ],
+        "name": "220_n4_correct",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "220_n4_correct"
+        ],
+        "name": "221_skullstrip_first_pass",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "221_skullstrip_first_pass"
+        ],
+        "name": "222_skullstrip_first_dilate",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "221_skullstrip_first_pass",
+            "222_skullstrip_first_dilate"
+        ],
+        "name": "223_skullstrip_first_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "223_skullstrip_first_mask"
+        ],
+        "name": "224_unifize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "224_unifize",
+            "215_gen_ref"
+        ],
+        "name": "225_fixhdr_unifize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "225_fixhdr_unifize"
+        ],
+        "name": "226_skullstrip_second_pass",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "226_skullstrip_second_pass",
+            "215_gen_ref"
+        ],
+        "name": "227_fixhdr_skullstrip2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "227_fixhdr_skullstrip2",
+            "221_skullstrip_first_pass"
+        ],
+        "name": "228_combine_masks",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "225_fixhdr_unifize",
+            "228_combine_masks"
+        ],
+        "name": "229_apply_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "179_select_transform"
+        ],
+        "name": "230_invt_bbr",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "230_invt_bbr",
+            "036_apply_mask",
+            "143_t1w_brain"
+        ],
+        "name": "231_fsl2itk_inv",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "231_fsl2itk_inv"
+        ],
+        "name": "232_ds_t1w_tpl_inv_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "231_fsl2itk_inv",
+            "167_carpetplot_select_std"
+        ],
+        "name": "233_mrg_xfms",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "233_mrg_xfms",
+            "062_combine_masks"
+        ],
+        "name": "234_resample_parc",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "151_acc_masks",
+            "062_combine_masks",
+            "231_fsl2itk_inv"
+        ],
+        "name": "235_acc_msk_tfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "235_acc_msk_tfm",
+            "062_combine_masks"
+        ],
+        "name": "236_acc_msk_brain",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "236_acc_msk_brain"
+        ],
+        "name": "237_acc_msk_bin",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "237_acc_msk_bin",
+            "063_tcompcor"
+        ],
+        "name": "238_mrg_compcor",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "238_mrg_compcor",
+            "043_merge",
+            "062_combine_masks"
+        ],
+        "name": "239_rois_plot",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "239_rois_plot"
+        ],
+        "name": "240_ds_report_bold_rois",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "237_acc_msk_bin",
+            "063_tcompcor",
+            "062_combine_masks"
+        ],
+        "name": "241_merge_rois",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "241_merge_rois",
+            "043_merge"
+        ],
+        "name": "242_signals",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "237_acc_msk_bin",
+            "043_merge",
+            "037_calc_dummy_scans"
+        ],
+        "name": "243_acompcor",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "243_acompcor",
+            "063_tcompcor"
+        ],
+        "name": "244_merge_compcor_metadata",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "244_merge_compcor_metadata"
+        ],
+        "name": "245_compcor_plot",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "245_compcor_plot"
+        ],
+        "name": "246_ds_report_compcor",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "243_acompcor"
+        ],
+        "name": "247_acc_metadata_fmt",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "064_tcc_metadata_fmt",
+            "247_acc_metadata_fmt"
+        ],
+        "name": "248_merge_confound_metadata",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "248_merge_confound_metadata"
+        ],
+        "name": "249_merge_confound_metadata2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "018_fdisp",
+            "243_acompcor",
+            "063_tcompcor",
+            "242_signals",
+            "017_add_motion_headers",
+            "015_add_rmsd_header",
+            "067_add_dvars_header",
+            "066_add_std_dvars_header"
+        ],
+        "name": "250_concat",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "250_concat"
+        ],
+        "name": "251_conf_corr_plot",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "251_conf_corr_plot"
+        ],
+        "name": "252_ds_report_conf_corr",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "250_concat"
+        ],
+        "name": "253_model_expansion",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "253_model_expansion"
+        ],
+        "name": "254_spike_regressors",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "254_spike_regressors",
+            "249_merge_confound_metadata2"
+        ],
+        "name": "255_ds_confounds",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "013_gen_ref",
+            "176_compare_transforms",
+            "254_spike_regressors"
+        ],
+        "name": "256_summary",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "256_summary"
+        ],
+        "name": "257_ds_report_summary",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "234_resample_parc",
+            "062_combine_masks",
+            "043_merge",
+            "254_spike_regressors"
+        ],
+        "name": "258_conf_plot",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "258_conf_plot"
+        ],
+        "name": "259_ds_report_bold_conf",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "092_inu_n4_final",
+            "094_thr_brainmask"
+        ],
+        "name": "260_apply_mask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "076_bidssrc",
+            "075_about"
+        ],
+        "name": "261_ds_report_about",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "076_bidssrc"
+        ],
+        "name": "262_bids_info",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "076_bidssrc",
+            "262_bids_info"
+        ],
+        "name": "263_summary",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "263_summary",
+            "076_bidssrc"
+        ],
+        "name": "264_ds_report_summary",
         "size": 1
     }
 ]

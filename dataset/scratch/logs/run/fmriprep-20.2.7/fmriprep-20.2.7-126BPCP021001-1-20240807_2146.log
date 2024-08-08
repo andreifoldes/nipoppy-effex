@@ -1,0 +1,133 @@
+[2024-08-07 21:46:48] INFO    Writing the log to /cubric/collab/487_mvpa/poppy-effex/dataset/scratch/logs/run/fmriprep-20.2.7/fmriprep-20.2.7-126BPCP021001-1-20240807_2146.log
+[2024-08-07 21:46:48] INFO    ========== BEGIN RUN WORKFLOW ==========
+[2024-08-07 21:46:48] INFO    PipelineRunner(dpath_root=/cubric/collab/487_mvpa/poppy-effex/dataset, pipeline_name=fmriprep, pipeline_version=20.2.7, pipeline_step=None, participant_id=126BPCP021001, session_id=1, simulate=False, fpath_layout=None, logger=<Logger run (INFO)>, dry_run=False)
+[2024-08-07 21:46:48] WARNING Creating directory /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021001-1
+[2024-08-07 21:46:48] INFO    Running on participant 126BPCP021001, session 1
+[2024-08-07 21:46:48] INFO    Loading config from /cubric/collab/487_mvpa/poppy-effex/dataset/global_config.json
+[2024-08-07 21:46:48] INFO    Building BIDSLayout with 2 ignore patterns: [re.compile('^(?!/sub-(126BPCP021001))'), re.compile('.*?/ses-(?!1)')]
+[2024-08-07 21:46:49] INFO    Loading descriptor from /cubric/collab/487_mvpa/poppy-effex/dataset/proc/descriptors/fmriprep-20.2.7.json
+[2024-08-07 21:46:49] INFO    Loaded Boutiques config from descriptor: CONTAINER_CONFIG=ContainerConfig(COMMAND='apptainer', ARGS=['--bind', '[[NIPOPPY_DPATH_DERIVATIVES]]/freesurfer/6.0.1/output/[[NIPOPPY_BIDS_SESSION]]'], ENV_VARS={}, INHERIT=True) CONTAINER_SUBCOMMAND='run'
+[2024-08-07 21:46:49] INFO    Updating container config with config from descriptor
+[2024-08-07 21:46:49] INFO    Using container config: COMMAND='singularity' ARGS=['--bind', '/home/saptaf1/freesurfer_license.txt', '--bind', '/cubric/collab/487_mvpa/poppy-effex/templateflow', '--cleanenv', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/bids', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021001-1', '--bind', '/cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7-126BPCP021001-1'] ENV_VARS={'TEMPLATEFLOW_HOME': '/cubric/collab/487_mvpa/poppy-effex/templateflow'} INHERIT=True
+[2024-08-07 21:46:49] INFO    Setting environment variable: APPTAINERENV_TEMPLATEFLOW_HOME=/cubric/collab/487_mvpa/poppy-effex/templateflow
+[2024-08-07 21:46:49] INFO    Setting environment variable: SINGULARITYENV_TEMPLATEFLOW_HOME=/cubric/collab/487_mvpa/poppy-effex/templateflow
+[2024-08-07 21:46:49] INFO    Processing the JSON descriptor
+[2024-08-07 21:46:49] INFO    Validating the JSON descriptor
+[2024-08-07 21:46:49] INFO    Processing the JSON invocation
+[2024-08-07 21:46:49] INFO    Loading invocation from /cubric/collab/487_mvpa/poppy-effex/dataset/proc/invocations/fmriprep-20.2.7.json
+[2024-08-07 21:46:49] INFO    Validating the JSON invocation
+[2024-08-07 21:46:49] ERROR   Error running fmriprep 20.2.7 on participant 126BPCP021001, session 1: [ ERROR ] Additional properties are not allowed ('fs_no_reconall' was unexpected)
+
+Failed validating 'additionalProperties' in schema:
+    {'$schema': 'http://json-schema.org/draft-04/schema#',
+     'title': 'fmriprep.invocationSchema',
+     'description': 'Invocation schema for fmriprep.',
+     'type': 'object',
+     'additionalProperties': False,
+     'properties': {'bids_dir': {'type': 'string'},
+                    'output_dir': {'type': 'string'},
+                    'analysis_level': {'enum': ['participant']},
+                    'version': {'type': 'boolean'},
+                    'skip_bids_validation': {'type': 'boolean'},
+                    'participant_label': {'type': 'array',
+                                          'items': {'type': 'string'}},
+                    'task_id': {'type': 'string'},
+                    'echo_idx': {'type': 'number'},
+                    'bids_filters': {'type': 'string'},
+                    'anat_derivatives': {'type': 'string'},
+                    'bids_database_dir': {'type': 'string'},
+                    'nprocs': {'type': 'string'},
+                    'omp_nthreads': {'type': 'string'},
+                    'memory_gb': {'type': 'string'},
+                    'low_mem': {'type': 'boolean'},
+                    'use_plugin': {'type': 'string'},
+                    'anat_only': {'type': 'boolean'},
+                    'boilerplate_only': {'type': 'boolean'},
+                    'md_only_boilerplate': {'type': 'boolean'},
+                    'aroma_err_on_warn': {'type': 'boolean'},
+                    'verbose_count': {'enum': ['-v', '-vv', '-vvv']},
+                    'ignore': {'type': 'array',
+                               'items': {'enum': ['fieldmaps',
+                                                  'slicetiming',
+                                                  'sbref',
+                                                  't2w',
+                                                  'flair']}},
+                    'longitudinal': {'type': 'boolean'},
+                    'output_spaces': {'type': 'array',
+                                      'items': {'type': 'string'}},
+                    'bold2t1w_init': {'enum': ['register', 'header']},
+                    'bold2t1w_dof': {'enum': [6, 9, 12]},
+                    'use_bbr': {'type': 'boolean'},
+                    'medial_surface_nan': {'type': 'boolean'},
+                    'slice_time_ref': {'type': 'string'},
+                    'dummy_scans': {'type': 'number'},
+                    '_random_seed': {'type': 'number'},
+                    'use_aroma': {'type': 'boolean'},
+                    'aroma_melodic_dim': {'type': 'number'},
+                    'regressors_all_comps': {'type': 'boolean'},
+                    'regressors_fd_th': {'type': 'number'},
+                    'regressors_dvars_th': {'type': 'number'},
+                    'skull_strip_template': {'type': 'string'},
+                    'skull_strip_fixed_seed': {'type': 'boolean'},
+                    'skull_strip_t1w': {'enum': ['auto', 'skip', 'force']},
+                    'fmap_bspline': {'type': 'boolean'},
+                    'fmap_no_demean': {'type': 'boolean'},
+                    'use_syn_sdc': {'type': 'boolean'},
+                    'force_syn': {'type': 'boolean'},
+                    'fs_license_file': {'type': 'string'},
+                    'fs_subjects_dir': {'type': 'string'},
+                    'hires': {'type': 'boolean'},
+                    'cifti_output': {'enum': ['91k', '170k']},
+                    'run_reconall': {'type': 'boolean'},
+                    'output_layout': {'enum': ['bids', 'legacy']},
+                    'work_dir': {'type': 'string'},
+                    'clean_workdir': {'type': 'boolean'},
+                    'resource_monitor': {'type': 'boolean'},
+                    'reports_only': {'type': 'boolean'},
+                    'config_file': {'type': 'string'},
+                    'write_graph': {'type': 'boolean'},
+                    'stop_on_first_crash': {'type': 'boolean'},
+                    'notrack': {'type': 'boolean'},
+                    'debug': {'type': 'array',
+                              'items': {'enum': ['compcor', 'all']}},
+                    'sloppy': {'type': 'boolean'}},
+     'required': ['bids_dir', 'output_dir', 'analysis_level'],
+     'dependencies': {}}
+
+On instance:
+    OrderedDict([('bids_dir',
+                  '/cubric/collab/487_mvpa/poppy-effex/dataset/bids'),
+                 ('output_dir',
+                  '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/output'),
+                 ('analysis_level', 'participant'),
+                 ('skip_bids_validation', True),
+                 ('participant_label', ['126BPCP021001']),
+                 ('bids_database_dir',
+                  '/cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7-126BPCP021001-1'),
+                 ('nprocs', '12'),
+                 ('omp_nthreads', '4'),
+                 ('memory_gb', '180G'),
+                 ('anat_only', False),
+                 ('fs_no_reconall', True),
+                 ('verbose_count', '-v'),
+                 ('output_spaces', ['MNI152NLin2009cAsym']),
+                 ('regressors_all_comps', True),
+                 ('fs_license_file',
+                  '/home/saptaf1/freesurfer_license.txt'),
+                 ('fs_subjects_dir',
+                  '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/freesurfer/6.0.1/output/ses-1'),
+                 ('work_dir',
+                  '/cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021001-1'),
+                 ('write_graph', True),
+                 ('notrack', True),
+                 ('bold2t1w_init', 'register'),
+                 ('bold2t1w_dof', 6),
+                 ('aroma_melodic_dim', -200),
+                 ('regressors_fd_th', 0.5),
+                 ('regressors_dvars_th', 1.5),
+                 ('skull_strip_template', 'OASIS30ANTs'),
+                 ('skull_strip_t1w', 'force'),
+                 ('output_layout', 'legacy')])
+[2024-08-07 21:46:49] INFO    Removing /cubric/collab/487_mvpa/poppy-effex/dataset/proc/pybids/bids_db/fmriprep-20.2.7-126BPCP021001-1
+[2024-08-07 21:46:49] INFO    Removing /cubric/collab/487_mvpa/poppy-effex/dataset/derivatives/fmriprep/20.2.7/work/fmriprep-20.2.7-126BPCP021001-1
+[2024-08-07 21:46:49] INFO    ========== END RUN WORKFLOW ==========

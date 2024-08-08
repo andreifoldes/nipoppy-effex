@@ -11,6 +11,7 @@
     "omp_nthreads": "4",
     "memory_gb": "180G",
     "anat_only": false,
+    "run_reconall": true,
     "verbose_count": "-v",
     "output_spaces": [
         "MNI152NLin2009cAsym"
